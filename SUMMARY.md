@@ -5,7 +5,6 @@
 
 ## Concepts
 
-* [Page 1](concepts/page-1.md)
-* [Glossary](concepts/glossary.md)
-* [Descriptors and Builders](concepts/descriptors-and-builders.md)
 * [What is Vyuh?](concepts/what-is-vyuh.md)
+* [Descriptors and Builders](concepts/descriptors-and-builders.md)
+* [Glossary](concepts/glossary.md)

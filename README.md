@@ -1,5 +1,5 @@
 ---
-description: Introduction to the Vyuh Documentation
+description: Documentation for the Vyuh Framework
 layout: landing
 ---
 
