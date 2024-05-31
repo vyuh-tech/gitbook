@@ -1,0 +1,2 @@
+# Typical Project Structure
+

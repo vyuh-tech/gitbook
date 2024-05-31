@@ -15,3 +15,18 @@
 * [Descriptors and Builders](concepts/descriptors-and-builders.md)
 * [Features and Plugins](concepts/features-and-plugins.md)
 * [Glossary](concepts/glossary.md)
+
+## Framework
+
+* [Packages](framework/packages.md)
+* [Plugins](framework/plugins.md)
+
+## Guides
+
+* [Typical Project Structure](guides/typical-project-structure.md)
+* [CMS](guides/cms/README.md)
+  * [Adding a new Content Type](guides/cms/adding-a-new-content-type.md)
+  * [Custom API Integration](guides/cms/custom-api-integration.md)
+  * [Custom Layout](guides/cms/custom-layout.md)
+  * [Custom Action](guides/cms/custom-action.md)
+  * [Custom Condition](guides/cms/custom-condition.md)
