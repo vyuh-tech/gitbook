@@ -35,13 +35,7 @@ Thus began the effort to explore Sanity in more depth and build a framework to _
 
 ### Presenting the Vyuh framework
 
-
-
-:::info Vyuh
-
-Vyuh is a framework to build _modular_, _scalable_ **Flutter** apps driven by a Content Management System (**CMS**)
-
-:::
+> Vyuh is a framework to build _modular_, _scalable_ **Flutter** apps driven by a Content Management System (**CMS**)
 
 Rather than thinking of your App in terms of screens of content, you make an important mind-shift: _"Think of your app as a collection of features where each feature contributes a set of components"_. These components could be as simple as a _Button_ or a _Card_ or more complex like a _Payment_ component.
 
