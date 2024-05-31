@@ -34,4 +34,4 @@ This is possible because the framework takes care of all the fundamentals of bui
 
 ## Let's get started
 
-Take a deep dive into **Vyuh** and fast-track your apps today! 🚀. If you are keen on a deeper overview of the Vyuh Framework and how it came to be, [read more...](./#what-is-vyuh)
+Take a deep dive into **Vyuh** and fast-track your apps today! 🚀. If you are keen on a deeper overview of the Vyuh Framework and how it came to be, [read more...](concepts/what-is-vyuh.md)
