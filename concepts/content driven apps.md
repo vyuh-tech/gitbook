@@ -1,5 +1,3 @@
-import { ThemeImage } from '../../components/ThemeImage';
-
 Apps today are heavily content-driven. If you take a quick scan of the apps
 installed on your phone, you will see that they are all powered by content
 sitting on the cloud.
@@ -60,13 +58,7 @@ apps should be put together. The **Vyuh Framework** takes a holistic view of
 this process and brings a set of techniques that make app development an easier
 process with the ability to control things remotely.
 
-<ThemeImage
-  srcLight={'/images/logo-light.png'}
-  srcDark={'/images/logo-dark.png'}
-  width={128}
-  height={128}
-  alt={'Vyuh Framework Logo'}
-/>
+![](../.gitbook/assets/logo.png)
 
 It gives the **No-Code** control to the Business teams and **Full-Code** control
 to the Engineering. This is a good balance and achieves having best of both
