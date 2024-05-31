@@ -1,7 +1,12 @@
 # Table of contents
 
 * [Overview](README.md)
-* [Get Started](get-started.md)
+
+## Intro
+
+* [Get Started](intro/get-started.md)
+* [Integrating a CMS](intro/integrating-a-cms.md)
+* [Mason Setup](intro/mason-setup.md)
 
 ## Concepts
 

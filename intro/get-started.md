@@ -13,19 +13,19 @@ Welcome to a new way to build Flutter Apps with the **Vyuh Framework**. The conc
 
 If you have not read through the **Core Concepts**, now would be a good time to quickly glance through that. The important ones you should cover include:
 
-* [Features and Plugins](concepts/features-and-plugins.md)
-* [Descriptors and Builders](concepts/descriptors-and-builders.md)
+* [Features and Plugins](../concepts/features-and-plugins.md)
+* [Descriptors and Builders](../concepts/descriptors-and-builders.md)
 {% endhint %}
 
-### Let's Start
+## Let's Start
 
 Now that you have some understanding of the core concepts, let's dig in to build our first feature with the **Vyuh Framework**.
 
-#### Install Flutter
+### Install Flutter
 
 We assume you already have Flutter installed 😇. If not, you can always go to [Flutter.dev and install it](https://docs.flutter.dev/get-started/install). Go through the steps outlined over there and have your Flutter setup ready.
 
-#### Creating your Project
+### Creating your Project
 
 We will create the standard Flutter Application project and take off from there. On your Command Shell, run the following command in the directory where you want your project.
 
@@ -41,11 +41,11 @@ flutter pub add vyuh_core vyuh_feature_developer go_router mobx flutter_mobx
 
 Now that you have the basics, we can start focusing on building a **Feature**.
 
-### Create a Feature
+## Create a Feature
 
 Vyuh based applications are a collection of Features. Each feature is a descriptor which describes the feature with `name`, `title`, `routes`, an `init`-function, etc. The mandatory ones are `name`, `title` and `routes`. Let's go ahead and define a feature.
 
-#### Create the `feature.dart` file
+### Create the `feature.dart` file
 
 Create a file, under `/lib`, called `feature.dart` and put the following code in it:
 
@@ -79,7 +79,7 @@ Let's take a moment to call out a few things:
 * `FeatureDescriptor` is a way to describe a single feature. Think of it like a manifest of all things exposed by this feature. For now we will just create the `routes`.
 * The `routes` field is an async function that returns an array of the `go_router` routes. This means, everything you know about `go_router` is all you need to work with routes. We don't use any proprietary packages anywhere in the framework and leverage the best community voted packages from `pub.dev`.
 
-#### Create the `_Counter` widget
+### Create the `_Counter` widget
 
 Your dart analyzer would have already complained that you haven't included the implementation for the `_Counter` widget. Let's add that next.
 
@@ -134,7 +134,7 @@ In the above code, you will notice that we are using MobX for state management. 
 >
 > The creator of the **Vyuh Framework** has also created **MobX.dart** in the past. So its natural to use MobX for all state management 😇.
 
-#### Running the app with the `feature`
+### Running the app with the `feature`
 
 Now we have the **counter-feature** ready, it's time to invoke the `runApp` method of the **Vyuh Framework**. Let's go back to the `main.dart` file in your project and replace it with these lines:
 
@@ -166,9 +166,9 @@ flutter run
 
 After a few moments, you should see an app getting launched on your chosen device or simulator. Here's how it looks after a couple of button presses:
 
-<figure><img src=".gitbook/assets/simulator.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/simulator.png" alt="" width="375"><figcaption></figcaption></figure>
 
-### Summary
+## Summary
 
 If you have reached this far, we hope you were able to see a simple feature like **Counter** implemented in an independent manner. With the definition of the feature in `FeatureDescriptor`, you were able to assemble a simple application. This technique is exactly the same whether you build a single feature or hundreds of features.
 
