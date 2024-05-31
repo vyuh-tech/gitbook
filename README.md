@@ -1,4 +1,5 @@
 ---
+description: Introduction to the Vyuh Documentation
 layout: landing
 ---
 
@@ -8,7 +9,7 @@ layout: landing
 
 Vyuh is a framework for building production-grade **Flutter** apps using a **CMS** to drive the entire experience.
 
-![](<.gitbook/assets/logo light.png>)![](<.gitbook/assets/logo dark.png>)
+![](<.gitbook/assets/logo light.png>)
 
 This CMS-driven approach helps in **dramatically reducing your time** 🕛 to ship new features with a **much smaller team** 😇.
 
