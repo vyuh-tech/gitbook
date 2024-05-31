@@ -2,7 +2,7 @@
 
 Building large scale apps with diverse and growing features, with a large team of developers, requires a different approach than building a monolithic app amongst a small group of people. When you start out, everything seems simple and the universe is not that complex.As you keep adding more features, managing the complexity can get challenging. Making things more modular and composable is the only way forward. Additionally, given that most apps today are _content-driven_, you would also need dynamic updates on the App without an App-Store release.
 
-![](<../.gitbook/assets/business engg.png>)
+![](<../../.gitbook/assets/business engg.png>)
 
 The Business teams are always looking to add more features to stay competitive in the market. No-Code/Low-Code tools are one option that can be used to get there faster. However, as the complexity of the features increase, these tools fail to address the complexity and become cumbersome. You have to fallback on Engineering to build the complex logic in code. This is where the promise of No-Code/Low-Code starts diminishing.
 
@@ -45,7 +45,7 @@ There is a **corresponding Flutter counterpart** to these components that actual
 
 #### Divide and Conquer
 
-![](<../.gitbook/assets/framework flow.png>)
+![](<../../.gitbook/assets/framework flow.png>)
 
 With this clear separation of responsibilities, we are able to offer a simple, intuitive interface to the business, via the CMS.
 
@@ -70,7 +70,7 @@ We meet in the middle with the **Vyuh Framework**, where the CMS components come
   * Content handling from a CMS
   * Ads, etc.
 
-![](../.gitbook/assets/framework.png)
+![](../../.gitbook/assets/framework.png)
 
 #### We are just getting started
 

@@ -19,7 +19,7 @@ A small sampling of your installed apps could be:
 
 
 
-<figure><img src="../.gitbook/assets/apps.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/apps.png" alt=""><figcaption></figcaption></figure>
 
 Most of the app content could be sitting remotely and downloaded on the fly. In some cases, the navigation, page content and visibility of information is controlled by factors such as your subscription tier, login status, past order history, etc. These Apps are very dynamic and will morph as per external factors, customer profile and availability of new features.
 
@@ -45,7 +45,7 @@ It gives the **No-Code** control to the Business teams and **Full-Code** control
 
 The complexity of the components are hidden away neatly in code by the Engineering teams. They only expose the minimal configuration that should be made visible to the Business. In this process, both Business and Engineering can each have their tools of choice without compromise.
 
-<figure><img src="../.gitbook/assets/capabilities.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/capabilities.png" alt=""><figcaption></figcaption></figure>
 
 #### Hidden powers
 

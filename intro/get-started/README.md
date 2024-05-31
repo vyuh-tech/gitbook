@@ -13,8 +13,8 @@ Welcome to a new way to build Flutter Apps with the **Vyuh Framework**. The conc
 
 If you have not read through the **Core Concepts**, now would be a good time to quickly glance through that. The important ones you should cover include:
 
-* [Features and Plugins](../concepts/features-and-plugins.md)
-* [Descriptors and Builders](../concepts/descriptors-and-builders.md)
+* [Features and Plugins](../../concepts/features-and-plugins.md)
+* [Descriptors and Builders](../../concepts/descriptors-and-builders.md)
 {% endhint %}
 
 ## Let's Start
@@ -166,7 +166,7 @@ flutter run
 
 After a few moments, you should see an app getting launched on your chosen device or simulator. Here's how it looks after a couple of button presses:
 
-<figure><img src="../.gitbook/assets/simulator.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/simulator.png" alt="" width="375"><figcaption></figcaption></figure>
 
 ## Summary
 
