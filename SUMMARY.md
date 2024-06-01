@@ -18,7 +18,8 @@
 
 ## Framework
 
-* [Packages](framework/packages.md)
+* [Packages](framework/packages/README.md)
+  * [Vyuh Feature System](framework/packages/vyuh-feature-system.md)
 * [Plugins](framework/plugins.md)
 * [Developer Tools](framework/developer-tools.md)
 * [Changelog](framework/changelog.md)
@@ -42,3 +43,4 @@
 
 * [News App](examples/news-app.md)
 * [Movies App](examples/movies-app.md)
+* [Unsplash App](examples/unsplash-app.md)
