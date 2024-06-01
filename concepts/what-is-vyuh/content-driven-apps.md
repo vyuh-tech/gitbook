@@ -1,7 +1,5 @@
 # Content Driven Apps
 
-## Content Driven Apps
-
 Apps today are heavily content-driven. If you take a quick scan of the apps installed on your phone, you will see that they are all powered by content sitting on the cloud.
 
 A small sampling of your installed apps could be:
