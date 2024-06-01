@@ -1,11 +1,9 @@
+---
+description: Cross-cutting capabilities for your App
+---
+
 # Plugins
 
-* Analytics
-* Auth
-* Content
-* Dependency Injection
-* Feature Flag
-* Secure Storage
-* Storage
-* Network
-* Navigation
+Plugins tackle the cross-cutting capabilities of your application. Vyuh provides standard interfaces to the most critical capabilities with an ever-growing set of third-party integrations.
+
+<table data-view="cards"><thead><tr><th></th><th></th></tr></thead><tbody><tr><td><strong>Content</strong></td><td>Allows integrating with a CMS to drive the entire App Experience.</td></tr><tr><td><strong>Navigation</strong></td><td>Allows navigation and routing to various routes in your application. Vyuh uses the GoRouter is its built-in router.</td></tr><tr><td><strong>Analytics</strong></td><td>Tracks all events, actions, network calls, navigation inside your Vyuh App</td></tr><tr><td><strong>Dependency Injection</strong></td><td>Provides a way to fetch shared services and objects that are required across the Application using a centralized registry.</td></tr><tr><td><strong>Network</strong></td><td>Makes network calls using your standard ReST methods (get, post, patch, delete, etc.)</td></tr><tr><td><strong>Auth</strong></td><td>Handles authentication and its associated session/token management.</td></tr><tr><td><strong>Feature Flag</strong></td><td>Run A/B/N Tests or just control visibility of features, actions, layouts, content-blocks and even screen journeys.</td></tr><tr><td><strong>Storage</strong></td><td>Provides persistent or in-memory key-value storage that can be used to store app related data</td></tr><tr><td><strong>Secure Storage</strong></td><td>A secure version of the storage with built-in encryption</td></tr><tr><td><strong>Logger</strong></td><td>Handles logging the various activities for debugging purposes. It supports all the log levels you expect in a logging system.</td></tr></tbody></table>
