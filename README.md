@@ -1,5 +1,5 @@
 ---
-description: Intro to the Documentation for the Vyuh Framework
+description: Docs for the Vyuh Framework
 ---
 
 # Overview
@@ -10,13 +10,20 @@ Vyuh is a framework for building production-grade **Flutter** apps using a **CMS
 
 <picture><source srcset=".gitbook/assets/logo dark.png" media="(prefers-color-scheme: dark)"><img src=".gitbook/assets/logo light.png" alt=""></picture>
 
-This CMS-driven approach helps in **dramatically reducing your time** 🕛 to ship new features with a **much smaller team** 😇.
+This CMS-driven approach helps in **dramatically reducing your time** 🕛 to ship new features with a **much smaller team** 😇.&#x20;
+
+It also gives **phenomenal control** 🎛️ in switching things and trying different variations of a journey or content.&#x20;
+
+It unlocks new ways of **exploring UI Development** 🌈 which is fun, flexible and dynamic.
 
 ## Fundamentals covered <a href="#fundamentals-covered" id="fundamentals-covered"></a>
 
 This is possible because the framework takes care of all the fundamentals of building large scale apps. This includes things like:
 
 * **CMS**-driven (aka _Server-driven_) UI
+  * Custom Content types
+  * Actions, Layouts, Conditions, Routes
+  * Custom journeys & Conditional flows
 * **Modular** development of **Features** with independent teams
 * Third party integrations via **Plugins**
 * **Remote configuration** with Zero App Store releases
@@ -26,7 +33,7 @@ This is possible because the framework takes care of all the fundamentals of bui
 * **Networking**
 * **Authentication**
 * Navigation and **Routing**
-* **State Management**
+* **State Management** with the sophistication you desire
 * **Error Handling**
 * **Theming**
 * **Storage** and Secure Storage

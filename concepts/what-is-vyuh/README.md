@@ -1,6 +1,6 @@
 # What is Vyuh?
 
-Building large scale apps with diverse and growing features, with a large team of developers, requires a different approach than building a monolithic app amongst a small group of people. When you start out, everything seems simple and the universe is not that complex.As you keep adding more features, managing the complexity can get challenging. Making things more modular and composable is the only way forward. Additionally, given that most apps today are _content-driven_, you would also need dynamic updates on the App without an App-Store release.
+Building large scale apps with diverse and growing features, with a large team of developers, requires a different approach than building a monolithic app amongst a small group of people. When you start out, everything seems simple and the universe is not that complex. As you keep adding more features, managing the complexity can get challenging. Making things more modular and composable is the only way forward. Additionally, given that most apps today are _content-driven_, you would also need dynamic updates on the App without an App-Store release.
 
 ![](<../../.gitbook/assets/business engg.png>)
 
