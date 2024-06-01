@@ -21,6 +21,7 @@
 * [Packages](framework/packages.md)
 * [Plugins](framework/plugins.md)
 * [Developer Tools](framework/developer-tools.md)
+* [Changelog](framework/changelog.md)
 
 ## Guides
 
