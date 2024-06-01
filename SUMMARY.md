@@ -11,7 +11,7 @@
 ## Concepts
 
 * [What is Vyuh?](concepts/what-is-vyuh/README.md)
-  * [Content Driven Apps](concepts/what-is-vyuh/page-2.md)
+  * [Content Driven Apps](concepts/what-is-vyuh/content driven apps)
 * [Descriptors and Builders](concepts/descriptors-and-builders.md)
 * [Features and Plugins](concepts/features-and-plugins.md)
 * [Glossary](concepts/glossary.md)
