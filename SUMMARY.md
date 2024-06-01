@@ -20,13 +20,24 @@
 
 * [Packages](framework/packages.md)
 * [Plugins](framework/plugins.md)
+* [Developer Tools](framework/developer-tools.md)
 
 ## Guides
 
 * [Typical Project Structure](guides/typical-project-structure.md)
+* [Thinking in Blocks](guides/thinking-in-blocks.md)
+* [Designing Features](guides/designing-features.md)
+* [Designing Content Schemas](guides/designing-content-schemas.md)
+* [Using Plugins](guides/using-plugins.md)
 * [CMS](guides/cms/README.md)
   * [Adding a new Content Type](guides/cms/adding-a-new-content-type.md)
-  * [Custom API Integration](guides/cms/custom-api-integration.md)
   * [Custom Layout](guides/cms/custom-layout.md)
   * [Custom Action](guides/cms/custom-action.md)
   * [Custom Condition](guides/cms/custom-condition.md)
+  * [Conditional Items](guides/cms/conditional-items.md)
+  * [Custom API Content](guides/cms/custom-api-content.md)
+
+## Examples
+
+* [News App](examples/news-app.md)
+* [Movies App](examples/movies-app.md)

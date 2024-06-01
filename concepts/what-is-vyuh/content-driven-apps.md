@@ -39,6 +39,8 @@ Several companies have attempted this in the past and have created proprietary s
 
 Building apps for the Content-Driven age requires a ground-up rethink of how apps should be put together. The **Vyuh Framework** takes a holistic view of this process and brings a set of techniques that make app development an easier process with the ability to control things remotely.
 
+<figure><img src="../../.gitbook/assets/logo.svg" alt=""><figcaption><p>The Vyuh Framework</p></figcaption></figure>
+
 It gives the **No-Code** control to the Business teams and **Full-Code** control to the Engineering. This is a good balance and achieves having best of both worlds. Businesses get a simplified interface to manage pages, navigation, feature-toggles, with a gallery of components that expose minimal configuration.
 
 The complexity of the components are hidden away neatly in code by the Engineering teams. They only expose the minimal configuration that should be made visible to the Business. In this process, both Business and Engineering can each have their tools of choice without compromise.

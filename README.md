@@ -8,7 +8,7 @@ description: Docs for the Vyuh Framework
 
 Vyuh is a framework for building production-grade **Flutter** apps using a **CMS** to drive the entire experience.
 
-<picture><source srcset=".gitbook/assets/logo dark.png" media="(prefers-color-scheme: dark)"><img src=".gitbook/assets/logo light.png" alt=""></picture>
+<figure><img src=".gitbook/assets/logo light.png" alt=""><figcaption></figcaption></figure>
 
 This CMS-driven approach helps in **dramatically reducing your time** 🕛 to ship new features with a **much smaller team** 😇.&#x20;
 
