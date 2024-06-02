@@ -19,11 +19,11 @@
 ## 👓 Guides
 
 * [Typical Project Structure](guides/typical-project-structure.md)
-* [Thinking in Blocks](guides/thinking-in-blocks.md)
 * [Designing Features](guides/designing-features.md)
-* [Designing Content Schemas](guides/designing-content-schemas.md)
 * [Using Plugins](guides/using-plugins.md)
 * [CMS](guides/cms/README.md)
+  * [Thinking in Blocks](guides/cms/thinking-in-blocks.md)
+  * [Designing Content Schemas](guides/cms/designing-content-schemas.md)
   * [Adding a new Content Type](guides/cms/adding-a-new-content-type.md)
   * [Custom Layout](guides/cms/custom-layout.md)
   * [Custom Action](guides/cms/custom-action.md)
