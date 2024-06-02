@@ -4,9 +4,9 @@
 
 ## Intro
 
-* [Get Started](intro/get-started/README.md)
-  * [Integrating a CMS](intro/get-started/integrating-a-cms.md)
-  * [Mason Setup](intro/get-started/mason-setup.md)
+* [Get Started](intro/get-started.md)
+* [Integrating a CMS](intro/integrating-a-cms.md)
+* [Mason Setup](intro/mason-setup.md)
 
 ## 💡 Concepts
 

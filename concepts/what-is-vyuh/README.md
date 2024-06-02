@@ -83,7 +83,7 @@ Our first set of integrations are with:
 * `go_router` for Routing
 * `http` for Networking
 
-If this sounds interesting, continue the next steps with the [Get Started](../../intro/get-started/) guide.
+If this sounds interesting, continue the next steps with the [Get Started](../../intro/get-started.md) guide.
 
 ### In Summary
 
