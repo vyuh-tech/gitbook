@@ -8,5 +8,4 @@ description: An app that shows Movies and their details from the TMDB API
 
 A longer video demonstrating the various features in the Movie App can be seen below.
 
-{% embed url="https://www.youtube.com/watch?v=gHq9irKG3yg" %}
-
+{% embed url="https://youtu.be/gHq9irKG3yg?si=oodHypz-uYsqVpUH" %}
