@@ -29,6 +29,7 @@
   * [Custom Action](guides/cms/custom-action.md)
   * [Custom Condition](guides/cms/custom-condition.md)
   * [Conditional Items](guides/cms/conditional-items.md)
+  * [Conditional Route](guides/cms/conditional-route.md)
   * [Custom API Content](guides/cms/custom-api-content.md)
 
 ## 🍀 Examples
