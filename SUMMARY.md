@@ -5,7 +5,7 @@
 ## Intro
 
 * [Get Started](intro/get-started.md)
-* [Integrating a CMS](intro/integrating-a-cms.md)
+* [Integrating the CMS](intro/integrating-a-cms.md)
 * [Mason Setup](intro/mason-setup.md)
 
 ## 💡 Concepts
