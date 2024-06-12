@@ -100,7 +100,7 @@ export default defineConfig([
 
 Now run the project , using `pnpm dev`
 
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
 Your studio should look something like above with the standard document types of _Route_, _Conditional_ _Route_, _Category_ and _Region_.
 
@@ -108,11 +108,13 @@ Your studio should look something like above with the standard document types of
 
 Let's create a simple route for a blog post, with the path `/blog`. Add a region on the route and call it `body`. Inside this region, add the `Portable Text` block.
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
 Now let's create some text and format it to look like a real blog post. We can add a title, section-headings, paragraphs, and images to the post.
 
 <figure><img src="../.gitbook/assets/Screenshot 2024-06-06 at 6.43.02 PM.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
 ## 4. Create the feature on the Flutter side
 
