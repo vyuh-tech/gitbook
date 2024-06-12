@@ -169,7 +169,7 @@ dependencies:
 ```
 
 {% hint style="success" %}
-**`vyuh_content_provider_sanity`** is a privately hosted package and part of the `Enterprise plan`
+**`vyuh_content_provider_sanity`** is a privately hosted package and part of the [`Enterprise plan`](https://vyuh.tech/pricing)
 {% endhint %}
 
 Now we add `SanityContentProvider` within the `DefaultContentPlugin`. This creates the connection to the Sanity Studio we setup earlier and can fetch content on demand.
