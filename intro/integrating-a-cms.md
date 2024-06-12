@@ -223,4 +223,6 @@ If you are running on the Web, make sure to update the **CORS Origins** in Sanit
 
 ## Summary
 
-This guide gave you a quick way of creating content on Sanity and seeing it live on the Device Simulator. Try exploring other content types that are present in the default setup, such as Cards, Groups, etc. This is just the beginning and there is lot you can do with custom content. We will explore that in other guides.\
+This guide gave you a quick way of creating content on Sanity and seeing it live on the Device Simulator. With the power of the Vyuh Framework, you can make changes on Sanity and have it rendered in real-time.&#x20;
+
+Try exploring other Content types such as Cards, Groups, etc. This is just the beginning and there is lot you can do with custom content and the Vyuh Framework. We will explore more in other guides.\
