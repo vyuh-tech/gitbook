@@ -15,3 +15,4 @@ description: Tracking the evolution, one version at a time
 * **Actions** allow invoking standard and custom actions for various user events. They are system wide and can be used by any Content Item.
 * **Conditional** elements for Routes, Content Items, Layouts and Actions
 * **Developer Tool** to give an X-Ray view of your Vyuh App
+* **Navigation** is done via  `GoRouter` including full support for dynamic routes loaded at runtime
