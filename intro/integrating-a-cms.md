@@ -158,6 +158,11 @@ Note that the `defaultRoutePageBuilder` is a standard page-builder that knows ho
 
 We are now in the final leg of this journey, where we connect the content, feature and the app to see all of it in action.
 
+Next we need to add a few packages for the framework. Run this command in your project directory:
+
+<pre><code><strong>flutter pub add vyuh_feature_system
+</strong></code></pre>
+
 In order to pull content from Sanity, we need to include the **Sanity Content Provider** in our App's `pubspec.yaml`. Here's the entry you need to make under `dependencies`.
 
 ```yaml
@@ -174,13 +179,17 @@ dependencies:
 
 Now we add `SanityContentProvider` within the `DefaultContentPlugin`. This creates the connection to the Sanity Studio we setup earlier and can fetch content on demand.
 
+````dart
 ```dart
 import 'package:flutter/material.dart';
 import 'package:sanity_client/client.dart';
 import 'package:vyuh_content_provider_sanity/vyuh_content_provider_sanity.dart';
 import 'package:vyuh_core/vyuh_core.dart' as vc;
 import 'package:vyuh_extension_content/vyuh_extension_content.dart';
-import 'feature.dart' as blog;
+import 'blog.dart' as blog;
+import 'package:vyuh_feature_system/vyuh_feature_system.dart' as system;
+import 'package:vyuh_feature_developer/vyuh_feature_developer.dart'
+    as developer;
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -188,15 +197,19 @@ void main() async {
   vc.runApp(
     initialLocation: '/blog',
     features: () => [
+      system.feature,
+      developer.feature,
       blog.feature,
     ],
     plugins: [
       DefaultContentPlugin(
         provider: SanityContentProvider(
-           SanityConfig(
-            dataset: 'production',
-            projectId: '<your-project-id>',
-            token:'<your-token>',
+          SanityClient(
+            SanityConfig(
+              dataset: 'your_dataset',
+              projectId: 'your_project_id',
+              token:'your_token',
+            ),
           ),
         ),
       )
@@ -205,6 +218,7 @@ void main() async {
 }
 
 ```
+````
 
 * We use the /blog as our `initialRoute` to load it up as the starting page of our App.
 * The `project-id` should be the same as the one used earlier for the Studio setup
