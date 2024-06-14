@@ -158,12 +158,12 @@ Note that the `defaultRoutePageBuilder` is a standard page-builder that knows ho
 
 We are now in the final leg of this journey, where we connect the content, feature and the app to see all of it in action.
 
-Next we need to add a few packages for the framework. Run this command in your project directory:
+We need to add few packages from the framework that allows rendering of the CMS content and also shows a _Developer View_ of the features. Run this command in your project directory:
 
-<pre><code><strong>flutter pub add vyuh_feature_system
+<pre class="language-sh"><code class="lang-sh"><strong>flutter pub add vyuh_feature_system vyuh_feature_developer
 </strong></code></pre>
 
-In order to pull content from Sanity, we need to include the **Sanity Content Provider** in our App's `pubspec.yaml`. Here's the entry you need to make under `dependencies`.
+In order to pull content from Sanity, we also need to include the **Sanity Content Provider** in our App's `pubspec.yaml`. Here's the entry you need to make under `dependencies`.
 
 ```yaml
 dependencies:
@@ -174,7 +174,7 @@ dependencies:
 ```
 
 {% hint style="success" %}
-**`vyuh_content_provider_sanity`** is a privately hosted package and part of the [`Enterprise plan`](https://vyuh.tech/pricing)
+**`vyuh_content_provider_sanity`** is a privately hosted package and part of the [**Enterprise plan**](https://vyuh.tech/pricing)
 {% endhint %}
 
 Now we add `SanityContentProvider` within the `DefaultContentPlugin`. This creates the connection to the Sanity Studio we setup earlier and can fetch content on demand.
