@@ -16,3 +16,5 @@ description: Tracking the evolution, one version at a time
 * **Conditional** elements for Routes, Content Items, Layouts and Actions
 * **Developer Tool** to give an X-Ray view of your Vyuh App
 * **Navigation** is done via  `GoRouter` including full support for dynamic routes loaded at runtime
+* **Mason bricks** to quickly scaffold your Vyuh App, Feature package and a Sanity schema package
+* A sample **Movies app** that integrates with the TMDB API to show off various capabilities of the Vyuh Framework
