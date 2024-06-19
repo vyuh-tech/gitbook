@@ -16,6 +16,8 @@ It also gives **phenomenal control** 🎛️ in switching things and trying diff
 
 It unlocks new ways of **exploring UI Development** 🌈 which is fun, flexible and dynamic.
 
+> #### A framework that can take you from <mark style="background-color:purple;">Idea to MVP to Production Scale</mark>. Makes the simple stuff easy and complex stuff possible with ease!
+
 ## Fundamentals covered <a href="#fundamentals-covered" id="fundamentals-covered"></a>
 
 This is possible because the framework takes care of all the fundamentals of building large scale apps. This includes things like:
