@@ -13,11 +13,11 @@ Welcome to a new way to build Flutter Apps with the **Vyuh Framework**. The conc
 
 If you have not read through the **Core Concepts**, now would be a good time to quickly glance through that. The important ones you should cover include:
 
-* [Features and Plugins](../../concepts/features-and-plugins.md)
-* [Descriptors and Builders](../../concepts/descriptors-and-builders.md)
+* [Features and Plugins](../concepts/features-and-plugins.md)
+* [Descriptors and Builders](../concepts/descriptors-and-builders.md)
 {% endhint %}
 
-## Let's Start
+## 1. Let's Start
 
 Now that you have some understanding of the core concepts, let's dig in to build our first feature with the **Vyuh Framework**.
 
@@ -41,7 +41,7 @@ flutter pub add vyuh_core vyuh_feature_developer go_router mobx flutter_mobx
 
 Now that you have the basics, we can start focusing on building a **Feature**.
 
-## Create a Feature
+## 2. Create a Feature
 
 Vyuh based applications are a collection of Features. Each feature is a descriptor which describes the feature with `name`, `title`, `routes`, an `init`-function, etc. The mandatory ones are `name`, `title` and `routes`. Let's go ahead and define a feature.
 
@@ -134,7 +134,7 @@ In the above code, you will notice that we are using MobX for state management. 
 >
 > The creator of the **Vyuh Framework** has also created **MobX.dart** in the past. So its natural to use MobX for all state management 😇.
 
-### Running the app with the `feature`
+## 3. Running the app with the `feature`
 
 Now we have the **counter-feature** ready, it's time to invoke the `runApp` method of the **Vyuh Framework**. Let's go back to the `main.dart` file in your project and replace it with these lines:
 
@@ -166,7 +166,7 @@ flutter run
 
 After a few moments, you should see an app getting launched on your chosen device or simulator. Here's how it looks after a couple of button presses:
 
-<figure><img src="../../.gitbook/assets/simulator.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/simulator.png" alt="" width="375"><figcaption></figcaption></figure>
 
 ## Summary
 
