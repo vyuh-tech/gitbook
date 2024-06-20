@@ -1,5 +1,5 @@
 ---
-description: Enables conditional behavior with various aspects of your application
+description: Enables conditional behavior for various aspects of your application
 ---
 
 # Conditions
