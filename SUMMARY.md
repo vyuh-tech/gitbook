@@ -25,6 +25,7 @@
   * [Thinking in Blocks](guides/cms/thinking-in-blocks.md)
   * [Designing Content Schemas](guides/cms/designing-content-schemas.md)
   * [Adding a new Content Type](guides/cms/adding-a-new-content-type.md)
+  * [Conditions](guides/cms/conditions.md)
   * [Custom Layout](guides/cms/custom-layout.md)
   * [Custom Action](guides/cms/custom-action.md)
   * [Custom Condition](guides/cms/custom-condition.md)
