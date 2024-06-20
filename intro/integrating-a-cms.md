@@ -38,7 +38,7 @@ What you get is a dynamic App that can be changed on the fly without an App Stor
 
 ## 2. Configure the Studio
 
-Add the following dependencies to your `package.json` and run run `pnpm i` . These dependencies will help in the schema development with Sanity and Vyuh.
+Add the following dependencies to your `package.json` and run `pnpm i` . These dependencies will help in the schema development with Sanity and Vyuh.
 
 ```json
 "dependencies": {
