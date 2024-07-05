@@ -6,7 +6,7 @@ description: Enables conditional behavior for various aspects of your applicatio
 
 _Condition_ is one of the core elements that is built into the Vyuh Framework. It allows you to express a _runtime_ condition that evaluates to one of many values. This can be used to control different aspects of the framework. Conditions are evaluated _**asynchronously**_, to accommodate making network calls or use local values.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 
 ## Need for Conditions
 
@@ -76,7 +76,7 @@ We briefly mentioned in the beginning that these conditions can be controlled fr
 
 This is where the true power of the framework comes out. Besides being a framework for building large-scale, production-quality apps, it can also be a great companion for exploration during your development journey.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Designers and Developers can work together to construct the building blocks and try out various permutations for a demo. Pick the one that makes most sense at build-time or release it to your customers to decide based on the winning A/B/N variation. There is a ton of exploratory power built into the framework and it call all be controlled via _**conditions**_.
 

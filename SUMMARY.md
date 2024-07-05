@@ -35,6 +35,11 @@
 
 ## 🍀 Examples
 
+* [Wonderous App](examples/wonderous-app/README.md)
+  * [Distilling Wonderous](examples/wonderous-app/distilling-wonderous.md)
+  * [A Schema-first approach](examples/wonderous-app/a-schema-first-approach.md)
+  * [Navigation and Structure](examples/wonderous-app/navigation-and-structure.md)
+  * [Managing Wonders](examples/wonderous-app/managing-wonders.md)
 * [News App](examples/news-app.md)
 * [Movies App](examples/movies-app.md)
 * [Unsplash App](examples/unsplash-app.md)

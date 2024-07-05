@@ -10,7 +10,7 @@ description: An app that shows Movies, TVSeries and their details from the TMDB 
 
  
 
-<figure><img src="../.gitbook/assets/image (6).png" alt="" width="188"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1).png" alt="" width="188"><figcaption></figcaption></figure>
 
 </div>
 
