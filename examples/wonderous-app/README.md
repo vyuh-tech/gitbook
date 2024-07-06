@@ -1,5 +1,21 @@
 ---
 description: The Flutter Wonderous App, reimagined with the Vyuh Framework
+cover: ../../.gitbook/assets/image.png
+coverY: 128.11764705882354
+layout:
+  cover:
+    visible: true
+    size: full
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
 ---
 
 # Wonderous App
