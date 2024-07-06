@@ -24,6 +24,10 @@ These set of posts will walk you through how it was built and the various choice
 [navigation-and-structure.md](navigation-and-structure.md)
 {% endcontent-ref %}
 
+{% content-ref url="rendering-a-wonder-section.md" %}
+[rendering-a-wonder-section.md](rendering-a-wonder-section.md)
+{% endcontent-ref %}
+
 {% content-ref url="managing-wonders.md" %}
 [managing-wonders.md](managing-wonders.md)
 {% endcontent-ref %}
