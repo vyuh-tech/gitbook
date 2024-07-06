@@ -141,4 +141,4 @@ With Vyuh, your Wonder information stays in one place and its easy to manage it 
 
 <figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Managing Wonders in the CMS Studio</p></figcaption></figure>
 
-Once the wonders were all setup in the Studio, it was now time to focus on the _Presentation_ side of the content. In the next post, we will cover the setup for defining the User Journeys on the CMS.
+Once the wonders were all setup in the Studio, it was now time to focus on the _Presentation_ side of the content. In the next article, we will cover the setup for defining the User Journeys on the CMS.

@@ -228,7 +228,7 @@ void main() async {
 
 Now run the app and be ready to be greeted by our lovely blog. Play around in the Studio to add more text, images, and moving blocks around. If you hit the _**refresh icon**_ at the bottom-left of the screen, you will see the content updates live on your App.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 ### Running on the Web?

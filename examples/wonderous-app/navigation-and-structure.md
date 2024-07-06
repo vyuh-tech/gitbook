@@ -8,7 +8,7 @@ In an earlier post, we talked about the essential journey of the Wonderous App, 
 
 <figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption><p>Wonderous Journey Map</p></figcaption></figure>
 
-These routes map to the `Route` document in the CMS. _Route_ is a special type in Vyuh that allows you to define a single page or dialog. Think of this as a single screen (aka page) of content. You can create routes within the CMS and link them together for navigation.
+These routes map to the `Route` document in the CMS. _**Route**_ is a special type in Vyuh that allows you to define a single page or dialog. Think of this as a single screen (aka page) of content. You can create routes within the CMS and link them together for navigation.
 
 ## Routes on the CMS and Application
 
@@ -82,7 +82,7 @@ String wonderPathResolver(String path) {
 
 The real magic is in the **`wonderPathResolver`** that looks at the specific `GoRoute` path and identifies the corresponding _CMS-path_.&#x20;
 
-With this we are now able to navigate to a path like **`/wonderous/wonder/taj-mahal/details`** and have it automatically use the **`/wonderous/wonder/details`** CMS-path for rendering the page content! Other application-routes for `<wonder>/events` and `<wonder>/photos` are mapped similarly.
+With this we are now able to navigate to a path like _`/wonderous/wonder/`**`taj-mahal`**`/details`_ and have it automatically use the _`/wonderous/wonder/details`_ CMS-path for rendering the page content! Other application-routes for _`<wonder>/events`_ and _`<wonder>/photos`_ are mapped similarly.
 
 Now that the application side routing is setup, its just a matter of linking the various wonder-cards in the _Wonderous Home_ route on the CMS. For the Taj Mahal wonder, we do it like so:
 
@@ -112,9 +112,9 @@ Just like we setup the Wonderous Home route, we also do a similar setup for the 
 
 <figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption><p>Page structure of the Details route</p></figcaption></figure>
 
-Notice that we have divided the page content into a set of Wonder sections: `Hero`, `Facts & History`, `Construction` and `Location Info`. These are special _Content Blocks_ we have created for the Wonderous feature. Dividing the wonder into a set of sections allows us to move around these sections, change their order or even add more content in between sections! This is a hidden super power, which we can leverage later.
+Notice that we have divided the page content into a set of Wonder sections: `Hero`, `Facts & History`, `Construction` and `Location Info`. These are special _Content Blocks_ we have created for the Wonderous feature. Dividing the wonder into a set of sections allows us to change their order or even add more content in between sections! This is a hidden super power, which we can leverage later.
 
-The wonder-section is defined in a schema for the CMS with a counterpart in Flutter. You can see this in the `FeatureDescriptor` for the wonderous feature.
+The wonder-section is defined in a schema for the CMS with a counterpart in Flutter. In the below two code-snippets, you can see the schema definition and its counterpart in Flutter.
 
 {% code title="feature.ts" %}
 ```typescript
@@ -195,6 +195,6 @@ final feature = FeatureDescriptor(
 
 With all the setup done so far on the CMS and on the Flutter side, we can run our App on the Simulator for a live preview. This is live because, making changes on the CMS gives a quick preview on the Flutter App. This workflow is very effective as you explore various layouts, content-combinations and tweak the visual details with _Flutter Hot Reload_.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption><p>The journeys for the Wonderous feature</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Navigating a single wonder in Vyuh</p></figcaption></figure>
 
 Note that we have taken some creative license in building these sections and they do not look exactly like the ones in the original Wonderous App. That is a deliberate choice, in order to focus more on the Vyuh related capabilities rather than Flutter. It is possible to get the exact same visual behavior with more time and effort.
