@@ -1,5 +1,5 @@
 ---
-description: Create App specific branching logic
+description: Encapsulate App specific branching logic in a custom condition
 ---
 
 # Custom Condition
