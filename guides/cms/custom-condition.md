@@ -1,3 +1,7 @@
+---
+description: Create App specific branching logic
+---
+
 # Custom Condition
 
 Conditions, as seen in an earlier article help in switching between two or more possibilities for an _Action_, _Layout_, _Route_ or a _Content Block_. They help in managing more complex scenarios by introducing branch-points at the right places.
