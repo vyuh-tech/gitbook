@@ -112,9 +112,9 @@ Now our API configuration shows up on the CMS and we can configure it as we need
 
 ## 3. API Configuration on the Flutter side
 
-As you may already know, the CMS counterpart on the Flutter side is an equivalent `FeatureDescriptor` that includes the _Dart_ `TypeDescriptor` that can handle fetching and rendering this API Content.
+As you may already know, the CMS counterpart on the Flutter side has an equivalent `FeatureDescriptor` that includes the _Dart_ `TypeDescriptor` which can handle fetching and rendering this API Content.
 
-This is done by extending the **`ApiConfiguration<T>`** abstract class. Here we define the schemaType, matching the CMS schema, and override its two methods:&#x20;
+This is done by extending the **`ApiConfiguration<T>`** abstract class. Here we define the `schemaType`, matching the CMS schema, and override its two methods:&#x20;
 
 * **`invoke(BuildContext context)`**: invokes the API and fetches the content (which you can wrap in type `<T>`). This is then passed to the `build` method.
 * **`build(BuildContext context, T? data)`**: Renders the data as per the Design System. It is possible to receive null, which could be because of lack of data or an error. The type **`<T>`**, which represents the response from the API can be defined by you. You can add your exception, if any, or just return plain data. If you want to show more details about the API response, you can create a more complex type to capture it.
