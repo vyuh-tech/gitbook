@@ -24,6 +24,16 @@ For someone long enough in the Flutter community, it is hard to miss the **Wonde
 
 As you know, the Vyuh Framework was designed to work well with _Content_ of all kinds, especially where the _CMS-hosted Content_ becomes the centerpiece of your experience. The Wonderous App fits perfectly with this idea, and we decided to _rebuild it_ using the Vyuh Framework.
 
+A variety of features from the framework are at play:
+
+1. **Custom content types**
+2. **Custom documents** with configurable section-based rendering
+3. **Navigation** between pages and templated routing
+4. **Custom actions**
+5. **API integrations** with Unsplash
+6. **Google Maps** integration
+7. **YouTube** player
+
 These set of posts will walk you through how it was built and the various choices made to reimagine the experience with Vyuh.
 
 ### Table of Contents
