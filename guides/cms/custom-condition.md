@@ -96,7 +96,7 @@ export const misc = new FeatureDescriptor({
 
 At the top level where the Sanity Studio is defined, we have already included the **misc** feature in our list of features. Thus the _part-of-day_ condition will now be visible when you try associating this condition for, say, a _conditional-block_.
 
-<figure><img src="../../.gitbook/assets/image (12) (1).png" alt=""><figcaption><p>Setting the condtion to "Part of Day"</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (12) (1).png" alt="" width="375"><figcaption><p>Setting the condtion to "Part of Day"</p></figcaption></figure>
 
 ## 3. Create the Flutter counterpart
 
@@ -195,11 +195,11 @@ Finally, we get to use our condition!&#x20;
 
 Let's create a _Conditional Block_ in our CMS and define the content items to show for the different conditions. We have created simple _Card_ items with the _title_ mentioning the part of the day.
 
-<figure><img src="../../.gitbook/assets/image (13) (1).png" alt=""><figcaption><p>Configuring a Conditional block</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (13) (1).png" alt="" width="375"><figcaption><p>Configuring a Conditional block</p></figcaption></figure>
 
 And here is the App in action, showing the appropriate greeting. We are just shy of _12pm by 18 minutes_, which is why its still **`morning`**.
 
-<figure><img src="../../.gitbook/assets/image (14) (1).png" alt=""><figcaption><p>Part of Day condition, in action</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (14) (1).png" alt="" width="259"><figcaption><p>Part of Day condition, in action</p></figcaption></figure>
 
 ## Summary
 
