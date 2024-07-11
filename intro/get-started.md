@@ -166,7 +166,7 @@ flutter run
 
 After a few moments, you should see an app getting launched on your chosen device or simulator. Here's how it looks after a couple of button presses:
 
-<figure><img src="../.gitbook/assets/simulator.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/simulator.png" alt="" width="188"><figcaption><p>The Counter feature in action</p></figcaption></figure>
 
 ## Summary
 

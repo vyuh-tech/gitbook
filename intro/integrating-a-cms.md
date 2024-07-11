@@ -112,9 +112,9 @@ Let's create a simple route for a blog post, with the path `/blog`. Add a region
 
 Now let's create some text and format it to look like a real blog post. We can add a title, section-headings, paragraphs, and images to the post.
 
-<figure><img src="../.gitbook/assets/Screenshot 2024-06-06 at 6.43.02 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2024-06-06 at 6.43.02 PM.png" alt="" width="375"><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 ## 4. Create the feature on the Flutter side
 
@@ -228,7 +228,7 @@ void main() async {
 
 Now run the app and be ready to be greeted by our lovely blog. Play around in the Studio to add more text, images, and moving blocks around. If you hit the _**refresh icon**_ at the bottom-left of the screen, you will see the content updates live on your App.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt="" width="196"><figcaption><p>Blog post rendered with Vyuh</p></figcaption></figure>
 
 {% hint style="info" %}
 ### Running on the Web?

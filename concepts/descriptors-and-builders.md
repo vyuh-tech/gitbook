@@ -1,3 +1,7 @@
+---
+description: Core classes that provide extensibility to the framework
+---
+
 # Descriptors and Builders
 
 The Vyuh framework is an extensible framework for building large scale apps using a CMS (or some content-source) for driving the experience. It is not mandatory to use a CMS, but eventually you will find it useful to have it in your toolkit. It can fast track the development and deployment of your application.

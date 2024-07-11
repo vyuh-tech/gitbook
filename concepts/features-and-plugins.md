@@ -1,3 +1,7 @@
+---
+description: The main actors of any Vyuh Application
+---
+
 # Features and Plugins
 
 ### Features

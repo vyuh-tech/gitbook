@@ -4,25 +4,27 @@ description: Definition of various terms in the context of the Vyuh Framework
 
 # Glossary
 
-### Descriptor
+## Descriptor
 
 A way to describe a modular piece of content or functionality. Descriptors are used to define a feature and its exported content types. They are also used to describe other aspect of the framework such as custom content, layouts, extensions, etc.
 
 On the CMS side, descriptors are used to describe various content types and configurations that can be used on the CMS Studio.
 
-### Builder
+Some of the common descriptor types you will encounter include the `FeatureDescriptor`, `ContentDescriptor`, `APIContentDescriptor`, etc.
+
+## Builder
 
 Builders are used to collect a set of related descriptors and build a feature or content. On the CMS side, builders assemble and create the schema for a single content-type. They collect all the related descriptors and use them to build the final schema.
 
 On the Flutter side, builders collect all the related descriptors, build a type-registry and help in rendering the content at runtime.
 
-### Feature
+## Feature
 
 Describes a single feature that is a unit of functionality in the application. Features are usually user-facing and include elements such as content types, routes, layouts, actions, and conditions. A feature also has metadata about its name, icon, title, and description.
 
 The ability to describe a feature in a modular manner is what makes _Vyuh_ unique.
 
-### Plugin
+## Plugin
 
 Plugins are a way to provide cross-cutting functionality that can be used by any feature in the app.
 
@@ -35,7 +37,15 @@ For example,
 A Plugin in the context of Vyuh is just a pluggable API and should not be confused with [plugin](https://docs.flutter.dev/packages-and-plugins/using-packages) from the Flutter framework.
 {% endhint %}
 
-### CMS
+## Schema
+
+Schema defines the shape and structure of your content-item along with all of its typed-attributes. Schemas are pervasively used in Vyuh to define various elements such as actions, layouts, routes, and custom content-types.
+
+The Schema has a Dart counterpart in Flutter, which deserializes the content and renders on the screen.
+
+All of these elements are part of the `FeatureDescriptor`, which describes the feature.
+
+## CMS
 
 CMS stands for Content Management System, more specifically a **Headless** content management system. It's a way to manage (create/store/edit) structured content with a pre-defined schema.
 
@@ -43,17 +53,11 @@ CMS itself is a plugin inside Vyuh and accessible via `vyuh.content`. It is used
 
 Other aspects of an application such as routes, actions, conditions, etc. are also managed on the CMS.
 
-### Action
+## Studio
 
-Actions specify what needs to be done after a certain event. For example, navigating to a page on clicking a card, or showing a success animation after checkout, etc.
+Refers to the Content editing experience offered by the headless CMS. This is usually where all the content gets created and managed. It might include a set of workflows for approval before publishing it live. Some studios allow greater customization, allowing developers to provide custom input controls for editing complex content types.
 
-Vyuh has several built in actions such as Navigation, Script execution, Restarting, Changing themes, etc.
-
-You can add your own actions and make them relevant to your app.
-
-> Like everything else in the _Vyuh Framework_, Action has counterparts on CMS and on the Flutter side.
-
-### Condition
+## Condition
 
 Conditions are runtime elements that evaluate to a boolean or some enumeration. They are used to control the flow of the application as well as the availability of certain elements.
 
@@ -64,27 +68,33 @@ For example,
 
 Conditions are used for routing, visibility, layouts, actions, and other dynamic aspects of the app.
 
-### Route
+## Route
 
 A route represents an identifiable screen, dialog or page of the application. The `path` attribute is used to uniquely identify a route. Route is possibly the most important content-type in a CMS driven Application.
 
-### Layout
+## Conditional Route
+
+A special type of Route that includes a _condition_ to allow runtime branching and switching between two or more Routes. Conditional routes are used to provide a fork in journey based on some condition. A classic example is to show a Login page or a Dashboard page depending on the authentication-state of the user. This can be done with a `ConditionalRoute` pointing to a _Login Page_ for the `false` condition and the _Dashboard Page_ for the `true` condition of the user-authentication state.
+
+## Action
+
+Actions specify what needs to be done after a certain event. For example, navigating to a page on clicking a card, or showing a success animation after checkout, etc.
+
+Vyuh has several built in actions such as Navigation, Script execution, Restarting, Changing themes, etc.
+
+You can add your own actions and make them relevant to your app.
+
+> Like everything else in the _Vyuh Framework_, Action has counterparts on CMS and on the Flutter side.
+
+## Layout
 
 Layouts describe the visual structure of a content-type. Every content type must have a _default layout_ and can also include multiple other layouts. They are particularly useful for routes, and content types like `Card` or `Group`. Whether a `Group` should be shown as a _vertical list_ or a _2-column grid_ is controlled by the layout. Layouts can be switched for different platforms, screen sizes, or based on runtime conditions.
 
-### Schema
-
-Schema defines the shape and structure of your content-item along with all of its typed-attributes. Schemas are pervasively used in Vyuh to define various elements such as actions, layouts, routes, and custom content-types.
-
-The Schema has a Dart counterpart in Flutter, which deserializes the content and renders on the screen.
-
-All of these elements are part of the `FeatureDescriptor`, which describes the feature.
-
-### Feature Registry
+## Feature Registry
 
 Feature Registry is a store of all the features that are available in the app. As described earlier in the Feature section, it is an atomic, transferable piece of functionality.
 
-### Platform
+## Platform
 
 Platform is the deployment target for the app. It can be `iOS`, `android`, `web` or any of the supported platforms of Flutter.
 
