@@ -24,14 +24,13 @@
 * [CMS](guides/cms/README.md)
   * [Thinking in Blocks](guides/cms/thinking-in-blocks.md)
   * [Designing Content Schemas](guides/cms/designing-content-schemas.md)
-  * [Adding a new Content Type](guides/cms/adding-a-new-content-type.md)
-  * [Conditions](guides/cms/conditions.md)
+  * [Custom Content Type](guides/cms/adding-a-new-content-type.md)
+  * [Custom API Content](guides/cms/custom-api-content.md)
   * [Custom Layout](guides/cms/custom-layout.md)
   * [Custom Action](guides/cms/custom-action.md)
+  * [Conditions](guides/cms/conditions.md)
   * [Custom Condition](guides/cms/custom-condition.md)
-  * [Conditional Items](guides/cms/conditional-items.md)
   * [Conditional Route](guides/cms/conditional-route.md)
-  * [Custom API Content](guides/cms/custom-api-content.md)
 
 ## 🍀 Examples
 
