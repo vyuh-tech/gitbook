@@ -6,7 +6,7 @@ description: Rendering parts of a Wonder with the WonderSection
 
 Dividing the Wonder into a set of sections gives us some flexibility to play around with the layout of the Wonder on the screen. As we saw earlier, these sections can be changed on the CMS with the UI automatically reflecting it. Because these sections are just a type of Content Block, you could even add other kinds of Content Blocks in between, if needed.
 
-<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption><p>Sections of a Wonder on the CMS</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (9) (1).png" alt=""><figcaption><p>Sections of a Wonder on the CMS</p></figcaption></figure>
 
 ## The Flutter counterpart of a Wonder Section
 

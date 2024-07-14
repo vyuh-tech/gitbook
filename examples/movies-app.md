@@ -35,4 +35,4 @@ The Movies App is a much more _sophisticated_ example of applying the Vyuh Frame
     * Custom **Design System**
     * **Onboarding pages** that talk about the feature
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>Gallery of screens in the TMDB feature</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption><p>Gallery of screens in the TMDB feature</p></figcaption></figure>

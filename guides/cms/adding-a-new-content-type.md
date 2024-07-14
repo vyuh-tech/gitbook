@@ -11,7 +11,7 @@ A quick summary of all the steps are given below, with the details in the follow
 #### CMS Side
 
 1. [Create a schema for the Content type](adding-a-new-content-type.md#defining-the-schema)
-2. [Register it the the FeatureDescriptor on the CMS side](adding-a-new-content-type.md#exporting-it-in-the-featuredescriptor)
+2. [Register it with the FeatureDescriptor](adding-a-new-content-type.md#exporting-it-in-the-featuredescriptor)
 3. [Add a few instances of the new Content type for testing](adding-a-new-content-type.md#creating-a-product-card-on-the-cms)
 
 #### Dart/Flutter Side
@@ -36,8 +36,8 @@ import { defineField, defineType } from 'sanity';
 import { IoShirt as Icon } from 'react-icons/io5';
 
 export const productCard = defineType({
-  name: 'misc.product',
-  title: 'Product',
+  name: 'misc.productCard',
+  title: 'Product Card',
   type: 'object',
   icon: Icon,
   fieldsets: [
@@ -106,7 +106,7 @@ export const productCard = defineType({
     prepare(selection) {
       const { title, image, price, category, skuId } = selection;
       return {
-        title: `${title} (${skuId})`,
+        title: `ProductCard | ${title} (${skuId})`,
         subtitle: `${category} - $${price}`,
         media: image,
       };
@@ -148,49 +148,51 @@ export const misc = new FeatureDescriptor({
 
 ```
 
+The `ContentSchemaBuilder` for this _productCard_ is a simple one and does not have any custom configurations or layouts that needs to be assembled. Hence, we go ahead with the standard `BuiltContentSchemeBuilder`.
+
 ### Creating a Product Card on the CMS
 
 Now that we have the schema defined, let's add some products to our page, in the CMS. Since the _Product Card_ has already been added to the _Route's region-items_, we can see it in the list of content items for the Region.
 
-<figure><img src="../../.gitbook/assets/image (23).png" alt="" width="375"><figcaption><p>Adding a Product Card to the body region</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt="" width="375"><figcaption><p>Adding a Product Card to the body region</p></figcaption></figure>
 
 After adding some of the details of the Product, we have the card, ready to be displayed on the App.
 
-<figure><img src="../../.gitbook/assets/image (24).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2).png" alt="" width="375"><figcaption><p>Adding a Product Card</p></figcaption></figure>
 
 ## 2. Rendering the Product Card
 
-Having an item defined on the CMS is only half the story. To render it on the Flutter side, we do need to create its Dart equivalent. If we fail to do so, we will be greeted with a message like below, indicating the missing piece of the Content definition.
+Having an item defined on the CMS is only half the story. To render it on Flutter, we do need to create its Dart equivalent. If we fail to do so, we will be greeted with a message like below, indicating the missing piece of the Content definition.
 
 Such a message is quite useful during development as it quickly helps in identifying the source of error. We are already aware of this missing piece, so let's fix it now.
 
-<figure><img src="../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption><p>Missing implementation for Content Item</p></figcaption></figure>
 
 ### Building the Dart equivalent of the Schema
 
 The _Dart_ version of the Product schema is the type-safe version of the JSON we get from the CMS. We can represent it like below.
 
 ```dart
+import 'package:feature_misc/content/product/default_layout.dart';
 import 'package:json_annotation/json_annotation.dart';
 import 'package:vyuh_core/vyuh_core.dart';
 import 'package:vyuh_extension_content/vyuh_extension_content.dart';
 
-part 'product.g.dart';
+part 'product_card.g.dart';
 
-@JsonSerializable()
-final class Product extends ContentItem {
-  static const schemaName = 'misc.product';
-  
+@JsonSerializable(createToJson: false)
+final class ProductCard extends ContentItem {
+  static const schemaName = 'misc.productCard';
   static final typeDescriptor = TypeDescriptor(
     schemaType: schemaName,
-    title: 'Product',
-    fromJson: Product.fromJson,
+    title: 'Product Card',
+    fromJson: ProductCard.fromJson,
   );
 
-  static final contentBuilder = ContentBuilder<Product>(
-    content: Product.typeDescriptor,
-    defaultLayout: DefaultProductLayout(),
-    defaultLayoutDescriptor: DefaultProductLayout.typeDescriptor,
+  static final contentBuilder = ContentBuilder<ProductCard>(
+    content: ProductCard.typeDescriptor,
+    defaultLayout: DefaultProductCardLayout(),
+    defaultLayoutDescriptor: DefaultProductCardLayout.typeDescriptor,
   );
 
   final String title;
@@ -200,24 +202,25 @@ final class Product extends ContentItem {
   final String skuId;
   final String category;
 
-  Product({
+  ProductCard({
     required this.title,
     required this.description,
     this.image,
     required this.price,
     required this.skuId,
     required this.category,
+    super.layout,
   }) : super(schemaType: schemaName);
 
-  factory Product.fromJson(Map<String, dynamic> json) =>
-      _$ProductFromJson(json);
+  factory ProductCard.fromJson(Map<String, dynamic> json) =>
+      _$ProductCardFromJson(json);
 }
 ```
 
 Notice the static fields: **`schemaName`**, **`typeDescriptor`** and the **`contentBuilder`**. These are by convention a way of keeping the meta details about the content item together. The `typeDescriptor` helps in defining the way to hydrate a Dart version of the Product from its JSON equivalent. Similarly the `contentBuilder` helps in defining the creating the visual representation of the Product. You will see these being used in the `FeatureDescriptor`, where we register the Product content type.
 
 {% hint style="info" %}
-The `Product's` `ContentBuilder` is simple and does not rely on `ContentDescriptor` at this point. More complex `ContentBuilders` will also work with their corresponding `ContentDescriptor` elements to collect configurations across the features. One such example is the content-builder for **`PortableText`**. It uses a custom `ContentDescriptor` to collect _custom blocks, styles and annotations_ across the features and assembles them into a single `PortableTextConfig`.
+The `ProductCard's` `ContentBuilder` is simple and does not rely on `ContentDescriptor` at this point. More complex `ContentBuilders` will also work with their corresponding `ContentDescriptor` elements to collect configurations across the features. One such example is the content-builder for **`PortableText`**. It uses a custom `ContentDescriptor` to collect _custom blocks, styles and annotations_ across the features and assembles them into a single `PortableTextConfig`.
 {% endhint %}
 
 ### Rendering with a LayoutConfiguration
@@ -296,9 +299,9 @@ final class DefaultProductLayout extends LayoutConfiguration<Product> {
 {% hint style="info" %}
 **Multiple Layouts**
 
-Note that a `ContentItem` like _Product_ can have one of many layouts applied to it. This is configurable from the CMS, as shown with the highlighted _**`Layout`**_ field. Each layout is a different configuration and can contain specific parameters to tweak the visual representation.&#x20;
+Note that a `ContentItem` like _ProductCard_ can have one of many layouts applied to it. This is configurable from the CMS, as shown with the highlighted _**`Layout`**_ field. Each layout is a different configuration and can contain specific parameters to tweak the visual representation.&#x20;
 
-<img src="../../.gitbook/assets/image (25).png" alt="" data-size="original">
+![](<../../.gitbook/assets/image (5).png>)
 
 For our use case, we have created a default layout, which is simple and does not have any configurable parameters.&#x20;
 {% endhint %}
@@ -309,13 +312,10 @@ Just like we did on the CMS side, we also need to register this content type on 
 
 {% code title="feature.dart" lineNumbers="true" %}
 ```dart
-import 'package:feature_misc/condition/part_of_day.dart';
-import 'package:feature_misc/content/api/dummy_json_api_content.dart';
-import 'package:feature_misc/content/product.dart';
+import 'package:feature_misc/content/product/product_card.dart';
 import 'package:flutter/material.dart';
 import 'package:vyuh_core/vyuh_core.dart';
 import 'package:vyuh_extension_content/vyuh_extension_content.dart';
-import 'package:vyuh_feature_system/vyuh_feature_system.dart';
 
 final feature = FeatureDescriptor(
   name: 'misc',
@@ -324,7 +324,7 @@ final feature = FeatureDescriptor(
   extensions: [
     ContentExtensionDescriptor(
       contentBuilders: [
-        Product.contentBuilder,
+        ProductCard.contentBuilder,
       ],
       
       // ... rest of the exported elements ...
@@ -341,13 +341,13 @@ With the schema on the CMS and its equivalent `ContentBuilder` created on Flutte
 
 For the two products which we added on the page, the corresponding cards can be seen in the app below.
 
-<figure><img src="../../.gitbook/assets/image (26).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3).png" alt="" width="375"><figcaption><p>Rendering the Product Cards</p></figcaption></figure>
 
 ## Summary
 
-In this article we described the process of adding a new Content type within our App. We started with the schema for the _Product_ Content type and registered it with the `FeatureDescriptor` to be visible inside the CMS.&#x20;
+In this article we described the process of adding a new Content type within our App. We started with the schema for the _ProductCard_ Content type and registered it with the `FeatureDescriptor` to be visible inside the CMS.&#x20;
 
-On the Dart/Flutter side we did an equivalent registration where we created the `Product` `ContentItem` type that knows how to deserialize the JSON schema. Using the combination of a `ContentBuilder` for the Product type with a `DefaultProductLayout` we can render the _Product_ on the screen.
+On the Dart/Flutter side we did an equivalent registration where we created the `ProductCard` `ContentItem` type that knows how to deserialize the JSON schema. Using the combination of a `ContentBuilder` for the Product type with a `DefaultProductCardLayout` we could render the _ProductCard_ on the screen.
 
-In this guide we created a single Default Layout. However, it is possible to have several different layouts for the Product. We will cover creating additional custom layouts in the guide on [Custom Layout](custom-layout.md).
+In this guide we created a single Default Layout. However, it is possible to have several different layouts for the `ProductCard`. We will cover creating additional custom layouts in the guide on [Custom Layout](custom-layout.md).
 
