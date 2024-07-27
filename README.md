@@ -1,12 +1,14 @@
 ---
-description: The knowledge portal for the Vyuh Framework
+description: Technical Documentation, examples, guides and resources for the Vyuh Framework
 ---
 
 # Overview
 
 ## What is Vyuh?
 
-Vyuh is a framework for building production-grade **Flutter** apps using a **CMS** to drive the entire experience.
+Vyuh is a framework for building _modular, large scale_ **Mobile** and **Web** apps (aka _Super Apps_). It uses **Flutter** to drive the App Experience and an _optional_ **Server-Driven UI** using a headless **CMS**.&#x20;
+
+> It is a tried and tested approach for building **Super Apps** as a collection of **modular Mini-Apps**. Vyuh allows you to create a _single unified App Experience_ that can connect multiple mini-apps.
 
 <figure><img src=".gitbook/assets/logo light.png" alt=""><figcaption></figcaption></figure>
 
@@ -45,7 +47,7 @@ This is possible because the framework takes care of all the fundamentals of bui
 
 As an enterprise looking to create your **flagship application**, or a **family of applications** or a **platform for white-labeled applications**, Vyuh is _ready for your journey_. The benefits below will be a _catalyst_ for _**faster time to market**_.
 
-<table data-view="cards"><thead><tr><th></th><th></th><th></th></tr></thead><tbody><tr><td><strong>Faster App Deployments</strong></td><td>Change the App Experience without any App Store release or deployment</td><td></td></tr><tr><td><strong>Explorative Power</strong></td><td>Explore different variations of your UX without changing any code</td><td></td></tr><tr><td><strong>Small teams, Big outcomes</strong></td><td>Build sophisticated Apps with smaller teams and faster outcomes.</td><td></td></tr><tr><td><strong>Extensibility built-in</strong></td><td>Tackle a variety of scenarios in your App Experience with customizations to the hilt, be it custom content-blocks, layouts, actions, routes or conditions.</td><td></td></tr><tr><td><strong>Design System First</strong></td><td>Use a Design System from the start to avoid visual consistency issues.</td><td></td></tr><tr><td><strong>Easy Third-Party integrations</strong></td><td>Using API-driven content you can integrate any API, be it ReST, GraphQL or WebSockets</td><td></td></tr><tr><td><strong>Powerful State Management</strong></td><td>Use the power of Reactive State with <a href="https://pub.dev/packages/mobx">MobX</a> to build simple to highly sophisticated experiences</td><td></td></tr><tr><td><strong>Developer Productivity</strong></td><td>Use the two super-powers of Dynamic updates via CMS and Flutter's Hot Reload to supercharge your Developer Experience.</td><td></td></tr><tr><td><strong>Growing Integrations</strong></td><td>Make use of the growing set of Plugins to cater to any aspect of your App Developer process from Networking to Analytics to Payments and much more.</td><td></td></tr><tr><td><strong>Fundamentals Ready</strong></td><td>Start with the built-in, fundamental building blocks to kickstart your Application.</td><td></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th></th><th></th></tr></thead><tbody><tr><td><strong>Faster App Deployments</strong></td><td>Change the App Experience without any App Store release or deployment</td><td></td></tr><tr><td><strong>Explorative Power</strong></td><td>Explore different variations of your UX without changing any code</td><td></td></tr><tr><td><strong>Small teams, Big outcomes</strong></td><td>Build sophisticated Apps with smaller teams and faster outcomes.</td><td></td></tr><tr><td><strong>Extensibility built-in</strong></td><td>Tackle a variety of scenarios in your App Experience with customizations to the hilt, be it custom content-blocks, layouts, actions, routes or conditions.</td><td></td></tr><tr><td><strong>Server Driven (CMS-driven) UI</strong></td><td>Build complete customer journeys using a CMS-driven approach. This unlocks a new way to deliver experiences without an App Store release.</td><td></td></tr><tr><td><strong>Design System First</strong></td><td>Use a Design System from the start to avoid visual consistency issues.</td><td></td></tr><tr><td><strong>Easy Third-Party integrations</strong></td><td>Using API-driven content you can integrate any API, be it ReST, GraphQL or WebSockets</td><td></td></tr><tr><td><strong>Powerful State Management</strong></td><td>Use the power of Reactive State with <a href="https://pub.dev/packages/mobx">MobX</a> to build simple to highly sophisticated experiences</td><td></td></tr><tr><td><strong>Developer Productivity</strong></td><td>Use the two super-powers of Dynamic updates via CMS and Flutter's Hot Reload to supercharge your Developer Experience.</td><td></td></tr><tr><td><strong>Growing Integrations</strong></td><td>Make use of the growing set of Plugins to cater to any aspect of your App Developer process from Networking to Analytics to Payments and much more.</td><td></td></tr><tr><td><strong>Fundamentals Ready</strong></td><td>Start with the built-in, fundamental building blocks to kickstart your Application.</td><td></td></tr></tbody></table>
 
 ## Let's get started
 
