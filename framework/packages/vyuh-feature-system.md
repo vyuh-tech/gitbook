@@ -88,7 +88,7 @@ Actions allows you to invoke specific operations based on certain user or system
 
 ## Conditions
 
-A Condition indicates one of many values, which is evaluated at runtime. The conditions in the system feature are:
+A Condition is evaluated at runtime and results in one of many values. The conditions in the system feature are:
 
 * **Simple Boolean**
 * **Current Platform**
