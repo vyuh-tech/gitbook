@@ -6,23 +6,55 @@ description: >-
 
 # Vyuh Feature System
 
-This is a system level feature that is needed for all Vyuh Apps. It includes the fundamental blocks for rendering Content Items and Routes, handling Actions, branching based on Conditions and switching between different Layouts for content items.
+This is a system level feature that is needed for all Vyuh Apps. It includes the fundamental blocks for rendering **Content Items** and **Routes**, handling **Actions**, branching based on **Conditions** and switching between different **Layouts** for content items.
 
 The following sections go into details of the various elements exposed in this feature.
 
 ## Content Items
 
-Content Items, also known as _Structured Content Blocks,_ represent the visual and information blocks used in an Application. These blocks can be configured on the CMS and have a visual equivalent rendered with Flutter. The System feature includes core elements such as:
+Content Items, also known as _Structured Content Blocks,_ represent the visual and information blocks used in an Application. These blocks can be configured on the CMS and have a visual equivalent rendered with Flutter. The default layouts are shown below. However they are completely customizable with custom layouts.
 
-* **Card**
-* **Group**
-* **API Content**&#x20;
-* **Conditional**
-* **Portable Text**
-* **Divider**
-* **Accordion**
-* **Empty**
-* **Unknown**
+<figure><img src="../../.gitbook/assets/image (23).png" alt="" width="375"><figcaption></figcaption></figure>
+
+The System feature includes core elements such as:
+
+### **Card**
+
+This is one of the most versatile content blocks in Vyuh. A card has a `title`, `description` and `image` as its primary properties. It also includes a primary `action` that is triggered on a tap or click. Similarly there are secondary and tertiary actions for advanced use cases.
+
+### **Group**
+
+This represents a collection of items such as a list, carousel or other kinds of related items that are shown together visually. It includes a `title`, `description` and the `items` as its primary fields. The `items` field can include an arbitrary combination of content-items and need not be homogenous.
+
+### **API Content**
+
+The block allows you to render content from a third-party API with rich customizations on the display. It relies on a specific `configuration` that represents the type of API that will be invoked along with any custom display properties for further customizations.
+
+### **Conditional**
+
+This allows you to use a Condition at runtime to decide the type of Content Item to show. You can define multiple `cases` for the condition and their corresponding content items.
+
+### **Portable Text**
+
+Renders text using the [Portable Text](https://github.com/portabletext/portabletext) specification. It allows the use of custom blocks, styles and annotations for a highly customized rich text display.&#x20;
+
+### **Divider**
+
+This represents a logical divider between content items. It renders as a line by default and allows separating sections of content in your page. With custom layouts you can make it as fancy as you like.
+
+### **Accordion**
+
+This is a group of `items` that each have their own title and set of content items. It renders as a set of collapsible items that can be expanded to show its content. In the collapsed mode, only the `title` is shown
+
+### **Empty**
+
+Useful when you don't want to show anything. It is generally used in the context of a Conditional as a content-item for the false value.
+
+### **Unknown**
+
+This is a _special type of content_ that is only used by the system to represent exceptional situations, especially when there is a missing type registration for an item. It is not meant to be used directly and not exposed on the CMS as well.
+
+***
 
 ## Routes
 
@@ -36,6 +68,8 @@ Routes represent individual pages or screens of content. When creating a user jo
 A special type of Route that allows branching between two or more routes based on a condition. Conditions are configured on the CMS and evaluated at runtime on the App by the framework.&#x20;
 
 A simple example of a Conditional Route is one where you go to the _Login Route_ if the user is _not authenticated_ and straight to the _Home route_ when _already logged in_.
+
+***
 
 ## Layouts
 
@@ -69,6 +103,8 @@ Layouts represent different ways of rendering a Content Item. Every content item
 * **Conditional Route**
   * Default
 
+***
+
 ## Actions
 
 Actions allows you to invoke specific operations based on certain user or system events. These could range from showing a dialog to making API calls. The following actions are built into the system feature:
@@ -85,6 +121,8 @@ Actions allows you to invoke specific operations based on certain user or system
 * **Restart the Vyuh Application**
 * **Show/Hide a SnackBar**
 * **Toggle Light/Dark Themes**
+
+***
 
 ## Conditions
 
