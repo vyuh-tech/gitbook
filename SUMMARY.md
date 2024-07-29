@@ -2,7 +2,7 @@
 
 * [Overview](README.md)
 
-## Intro
+## 🌟 Intro
 
 * [Get Started](intro/get-started.md)
 * [Integrating the CMS](intro/integrating-a-cms.md)
@@ -45,10 +45,12 @@
 * [Movies App](examples/movies-app.md)
 * [News App](examples/news-app.md)
 
-## Framework
+## 🔆 Framework
 
 * [Packages](framework/packages/README.md)
   * [Vyuh Feature System](framework/packages/vyuh-feature-system.md)
+  * [Vyuh Core](framework/packages/vyuh-core.md)
+  * [Vyuh Extension Content](framework/packages/vyuh-extension-content.md)
 * [Plugins](framework/plugins.md)
 * [Developer Tools](framework/developer-tools.md)
 * [Changelog](framework/changelog.md)
