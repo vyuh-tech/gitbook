@@ -6,6 +6,10 @@ description: The do's and don'ts of a project structure for building Apps at sup
 
 The Vyuh Framework was designed to build large scale apps in a modular fashion. It helps you to break up your app as as collection of features and connect them all together with a Server-Driven (aka CMS-Driven) UI. Even if you don't intend to use a CMS to drive the experience, it is still helpful to think modularly with the use of _features as your logical units of functionality_.
 
+{% hint style="info" %}
+The following is also the default structure that is created when using the [**Mason Brick**](../intro/mason-setup.md) for creating a new Vyuh App.
+{% endhint %}
+
 ## Structure
 
 With this notion in mind, the project structure is specifically crafted to think in features from the beginning and not devolve into a monolithic structure. Additionally, we have taken some of the best techniques and practices building large scale apps and baked them into the framework. At a high level, here is the organization of the files and folders of a typical Vyuh Project.
