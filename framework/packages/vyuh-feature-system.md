@@ -46,6 +46,10 @@ This represents a logical divider between content items. It renders as a line by
 
 This is a group of `items` that each have their own title and set of content items. It renders as a set of collapsible items that can be expanded to show its content. In the collapsed mode, only the `title` is shown
 
+### **Video Player**
+
+A simple video-player that plays a video from a Network Url with an optional `title`. You can control aspects such as autoplay, looping and muting the volume.
+
 ### **Empty**
 
 Useful when you don't want to show anything. It is generally used in the context of a Conditional as a content-item for the false value.
