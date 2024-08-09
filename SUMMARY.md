@@ -12,8 +12,9 @@
 
 * [What is Vyuh?](concepts/what-is-vyuh/README.md)
   * [Content Driven Apps](concepts/what-is-vyuh/content-driven-apps.md)
-* [Descriptors and Builders](concepts/descriptors-and-builders.md)
 * [Features and Plugins](concepts/features-and-plugins.md)
+* [Descriptors and Builders](concepts/descriptors-and-builders.md)
+* [Thinking in Blocks](concepts/thinking-in-blocks.md)
 * [Glossary](concepts/glossary.md)
 
 ## 👓 Guides
@@ -22,7 +23,6 @@
 * [Designing Features](guides/designing-features.md)
 * [Using Plugins](guides/using-plugins.md)
 * [CMS](guides/cms/README.md)
-  * [Thinking in Blocks](guides/cms/thinking-in-blocks.md)
   * [Designing Content Schemas](guides/cms/designing-content-schemas.md)
   * [Custom Content Type](guides/cms/adding-a-new-content-type.md)
   * [Custom API Content](guides/cms/custom-api-content.md)
