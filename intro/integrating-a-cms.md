@@ -38,65 +38,56 @@ What you get is a dynamic App that can be changed on the fly without an App Stor
 
 ## 2. Configure the Studio
 
-Add the following dependencies to your `package.json` and run `pnpm i` . These dependencies will help in the schema development with Sanity and Vyuh.
+Add the following dependencies to your `package.json` and run `pnpm install` . These dependencies will help in the schema development with _Sanity_ and _Vyuh_.
 
+{% code title="package.json" %}
 ```json
 "dependencies": {
     /* Other Dependencies */
-    "@vyuh/sanity-schema-core": "^1.3.13",
-    "@vyuh/sanity-schema-system": "^1.3.13"
+    "@vyuh/sanity-plugin-structure": "^1.16.2",
+    "@vyuh/sanity-schema-core": "^1.16.2",
+    "@vyuh/sanity-schema-system": "^1.16.2"
   },
 ```
+{% endcode %}
 
-Once installation is done, go to the `index.ts` file and update the `schemaTypes` as below
-
-```typescript
-import {bootstrap} from '@vyuh/sanity-schema-core'
-import {system} from '@vyuh/sanity-schema-system'
-
-const schemas = bootstrap([system])
-export const schemaTypes = schemas
-```
-
-{% hint style="info" %}
-**`bootstrap()`** is a function that takes in two arguments:
-
-1. an array of `FeatureDescriptor`s that represent the features of your application. Each `FeatureDescriptor` contributes a set of content schemas that are available on the Studio.
-2. Plugins for advanced configuration of the bootstrapping process. For now, you can ignore this argument.
-{% endhint %}
-
-We will also make some minimal changes to the `sanity.config.ts` file that sits at the root of your project.&#x20;
-
-{% hint style="info" %}
-Notice that we have updated the `plugins` property to include some standard configuration that is useful for a Vyuh App.
-{% endhint %}
+Once installation is done, go to the `sanity.config.ts` file and update the contents as below
 
 {% code title="sanity.config.ts" %}
 ```typescript
 import {defineConfig} from 'sanity'
-import {structureTool} from 'sanity/structure'
-import {schemaTypes} from './schemaTypes'
-import {defaultDocumentNode, deskStructure} from '@vyuh/sanity-schema-core'
-import {visionTool} from '@sanity/vision'
+import {vyuh} from '@vyuh/sanity-plugin-structure'
+import {system} from '@vyuh/sanity-schema-system'
 
 export default defineConfig([
   {
     name: 'default',
-    title: 'My Blog',
+    title: '<Your App Name>',
     basePath: '/',
 
-    projectId: '<your-project-id>',
+    projectId: '<Your Sanity Project ID>',
     dataset: 'production',
 
-    plugins: [structureTool({structure: deskStructure, defaultDocumentNode}), visionTool()],
-    schema: {
-      types: schemaTypes,
-    },
+    plugins: [
+      vyuh({
+        features: [
+          system,
+          // ... other features ... //
+        ],
+      }),
+    ],
   },
 ])
 
 ```
 {% endcode %}
+
+{% hint style="info" %}
+**`vyuh({ features: [] })`** is a sanity plugin that configures the studio.
+
+1. It takes an array of `FeatureDescriptor`s that represent the features of your application. Each`FeatureDescriptor` contributes a set of content schemas that are available on the Studio.&#x20;
+2. It also includes the standard Sanity plugins such as the _Structure_, _Vision_ and _Media_ for simpler setup.
+{% endhint %}
 
 Now run the project , using `pnpm dev`
 
@@ -121,12 +112,12 @@ Now let's create some text and format it to look like a real blog post. We can a
 Just like we had the `FeatureDescriptor` for setting up the schemas in Sanity, we also have an equivalent `FeatureDescriptor` on the Flutter side that handles the rendering of these schemas. Let's set it up inside the `feature.dart` file.
 
 {% hint style="info" %}
-In our application, we define each feature using a `FeatureDescriptor`. A feature is treated as a self-contained, independent unit within the app and can include various routes and content-extensions to handle CMS content. It also has other metadata such as a name, title, icon, etc.
+In our application, we define each feature using a `FeatureDescriptor`. A feature is treated as a self-contained, independent unit within the app and can include various routes and content-extensions to handle CMS content. It also has other metadata such as a `name`, `title`, `icon`, etc.
 
-For every feature, we will create a dedicated `feature.dart` file, which will contain the `FeatureDescriptor`.
+For every feature, we will create a dedicated **`feature.dart`** file, which will contain the **`FeatureDescriptor`**.
 {% endhint %}
 
-{% code title="feature.dart" %}
+{% code title="lib/feature.dart" %}
 ```dart
 
 import 'package:flutter/material.dart';
@@ -158,7 +149,7 @@ Note that the `defaultRoutePageBuilder` is a standard page-builder that knows ho
 
 We are now in the final leg of this journey, where we connect the content, feature and the app to see all of it in action.
 
-We need to add few packages from the framework that allows rendering of the CMS content and also shows a _Developer View_ of the features. Run this command in your project directory:
+We need to add few packages from the framework that allows rendering of the CMS content and also show a _Developer View_ of the features. Run this command in your project directory:
 
 <pre class="language-sh"><code class="lang-sh"><strong>flutter pub add vyuh_feature_system vyuh_feature_developer
 </strong></code></pre>
@@ -174,19 +165,19 @@ dependencies:
 ```
 
 {% hint style="success" %}
-**`vyuh_content_provider_sanity`** is a privately hosted package and part of the [**Enterprise plan**](https://vyuh.tech/pricing)
+**`vyuh_content_provider_sanity`** is a privately hosted package and part of the [**Enterprise plan**](https://vyuh.tech/pricing). You will be given a _token_ to get access to the private pub upon onboarding.
 {% endhint %}
 
 Now we add `SanityContentProvider` within the `DefaultContentPlugin`. This creates the connection to the Sanity Studio we setup earlier and can fetch content on demand.
 
-````dart
+{% code title="lib/main.dart" %}
 ```dart
 import 'package:flutter/material.dart';
 import 'package:sanity_client/client.dart';
 import 'package:vyuh_content_provider_sanity/vyuh_content_provider_sanity.dart';
 import 'package:vyuh_core/vyuh_core.dart' as vc;
 import 'package:vyuh_extension_content/vyuh_extension_content.dart';
-import 'blog.dart' as blog;
+import 'feature.dart' as blog;
 import 'package:vyuh_feature_system/vyuh_feature_system.dart' as system;
 import 'package:vyuh_feature_developer/vyuh_feature_developer.dart'
     as developer;
@@ -216,9 +207,8 @@ void main() async {
     ],
   );
 }
-
 ```
-````
+{% endcode %}
 
 * We use the /blog as our `initialRoute` to load it up as the starting page of our App.
 * The `project-id` should be the same as the one used earlier for the Studio setup
@@ -241,4 +231,4 @@ If you are running on the Web, make sure to update the **CORS Origins** in Sanit
 
 This guide gave you a quick way of creating content on Sanity and seeing it live on the Device Simulator. With the power of the Vyuh Framework, you can make changes on Sanity and have it rendered in real-time.&#x20;
 
-Try exploring other Content types such as Cards, Groups, etc. This is just the beginning and there is lot you can do with custom content and the Vyuh Framework. We will explore more in other guides.\
+Try exploring other _Content types_ such as Cards, Groups, and playing around with _Actions_ and _Conditions_. This is just the beginning and there is lot you can do with custom content and the Vyuh Framework. We will explore more in other guides.\
