@@ -105,6 +105,8 @@ Layouts represent different ways of rendering a Content Item. Every content item
 **API Configurations**
 
 **API Content** is a bit special as it also supports custom _API Configurations_ to work with any 3rd Party API. By default it includes the _JSONPath-based configuration_ for quick testing of APIs with the ability to set endpoint urls, request-headers and do a _JSONPath-based_ mapping to render as a single Card or a list of Cards.
+
+**Custom API Configurations** can choose to talk to a specific API with more complex setup and rendering. You have complete freedom to invoke any _ReST_, _GraphQL_ or a _Streaming API_ and render it the way you please!
 {% endhint %}
 
 * **Route**
