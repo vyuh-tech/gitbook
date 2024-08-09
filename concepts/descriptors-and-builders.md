@@ -51,6 +51,6 @@ Note that from a framework's perspective even the page is a content type and has
 
 With a system like this in place, the content can change dynamically on the CMS, and the Flutter side will adapt automatically and render it. This is the power of a CMS driven UI. Once the _Design System_ of your app is bolted down, the CMS becomes your playground to quickly set up a page, link it to other pages and compose the content on various pages.
 
-After you start using a system like Vyuh, you realize that it can be tool even for **quick prototyping** and trying different design variations without sacrificing time with elaborate code changes. It is truly a framework that can grow with your needs from the early days of an **MVP** -> **Production v1** and evolving further with multiple versions. You can also build a **Family of Apps** or a **Platform** for creating white-labeled Apps!&#x20;
+After you start using a system like Vyuh, you realize that it can be a tool even for **quick prototyping** and trying different design variations, without sacrificing time with elaborate code changes. It is truly a framework that can grow with your needs from the early days of an **MVP** -> **Production v1** and evolving further with multiple versions. You can also build a **Family of Apps** or a **Platform** for creating white-labeled Apps!&#x20;
 
 > Continue exploring the Vyuh framework to see this power in action.
