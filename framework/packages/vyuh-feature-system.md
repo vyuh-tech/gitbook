@@ -100,6 +100,13 @@ Layouts represent different ways of rendering a Content Item. Every content item
   * Default
 * **API Content**
   * Default
+
+{% hint style="info" %}
+**API Configurations**
+
+**API Content** is a bit special as it also supports custom _API Configurations_ to work with any 3rd Party API. By default it includes the _JSONPath-based configuration_ for quick testing of APIs with the ability to set endpoint urls, request-headers and do a _JSONPath-based_ mapping to render as a single Card or a list of Cards.
+{% endhint %}
+
 * **Route**
   * Default
   * Tabs
