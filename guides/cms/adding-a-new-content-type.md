@@ -154,7 +154,7 @@ The `ContentSchemaBuilder` for this _productCard_ is a simple one and does not h
 
 Now that we have the schema defined, let's add some products to our page, in the CMS. Since the _Product Card_ has already been added to the _Route's region-items_, we can see it in the list of content items for the Region.
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt="" width="375"><figcaption><p>Adding a Product Card to the body region</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt="" width="375"><figcaption><p>Adding a Product Card to the body region</p></figcaption></figure>
 
 After adding some of the details of the Product, we have the card, ready to be displayed on the App.
 

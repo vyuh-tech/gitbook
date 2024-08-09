@@ -14,7 +14,7 @@ The following is also the default structure that is created when using the [**Ma
 
 With this notion in mind, the project structure is specifically crafted to think in features from the beginning and not devolve into a monolithic structure. Additionally, we have taken some of the best techniques and practices building large scale apps and baked them into the framework. At a high level, here is the organization of the files and folders of a typical Vyuh Project.
 
-<figure><img src="../.gitbook/assets/image.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (22).png" alt="" width="563"><figcaption></figcaption></figure>
 
 A few things will stand out immediately:
 

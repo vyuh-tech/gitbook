@@ -76,7 +76,7 @@ We briefly mentioned in the beginning that these conditions can be controlled fr
 
 This is where the true power of the framework comes out. Besides being a framework for building large-scale, production-quality apps, it can also be a great companion for exploration during your development journey.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Designers and Developers can work together to construct the building blocks and try out various permutations for a demo. Pick the one that makes most sense at build-time or release it to your customers to decide based on the winning A/B/N variation. There is a ton of exploratory power built into the framework and it call all be controlled via _**conditions**_.
 
