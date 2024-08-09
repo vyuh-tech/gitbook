@@ -43,10 +43,14 @@ abstract class ContentBuilder {
 
 Once you have the descriptors and builders in place, the framework can now orchestrate the rendering of the content. When a new page is fetched from the CMS, the framework identifies the correct builder for the various content types and renders them. The builders are maintained in a type-safe registry for easy lookup based on a schema name.
 
+<figure><img src="../.gitbook/assets/image (28).png" alt=""><figcaption><p>Descriptors and Builders working together to orchestrate Content + Presentation</p></figcaption></figure>
+
 Note that from a framework's perspective even the page is a content type and has its own builder. The process works recursively down into the items of the page. Of course, the framework does lot of error checking, validation and provides debug-hints to ensure you implement correctly.
 
 ### Power of Exploration
 
 With a system like this in place, the content can change dynamically on the CMS, and the Flutter side will adapt automatically and render it. This is the power of a CMS driven UI. Once the _Design System_ of your app is bolted down, the CMS becomes your playground to quickly set up a page, link it to other pages and compose the content on various pages.
+
+After you start using a system like Vyuh, you realize that it can be tool even for **quick prototyping** and trying different design variations without sacrificing time with elaborate code changes. It is truly a framework that can grow with your needs from the early days of an **MVP** -> **Production v1** and evolving further with multiple versions. You can also build a **Family of Apps** or a **Platform** for creating white-labeled Apps!&#x20;
 
 > Continue exploring the Vyuh framework to see this power in action.
