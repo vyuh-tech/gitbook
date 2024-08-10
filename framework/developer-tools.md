@@ -34,7 +34,7 @@ Once you start building larger apps, it is useful to see how the App was put tog
 
 It shows you all the features and goes into details about the various elements exposed by each feature.  This is a great way to verify that the right configurations have been exposed.
 
-When you describe your Feature with the `FeatureDescriptor`, make sure to add proper `title`, `icon` and _description_. This will be used when rendering it inside the _Developer Tool_. For example, this is how the System feature has been declared with all these parameters.
+When you describe your Feature with the `FeatureDescriptor`, make sure to add proper `title`, `icon` and `description`. This will be used when rendering it inside the _Developer Tool_. For example, this is how the System feature has been declared with all these parameters.
 
 ```dart
 final feature = FeatureDescriptor(
