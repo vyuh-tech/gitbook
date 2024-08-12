@@ -4,7 +4,7 @@ description: Tips to design effective schemas for your content-blocks
 
 # Designing Content Schemas
 
-The source of all Presentation is **Data**; yet most of the industry tooling is geared towards _Screen Design_ rather than **Content (aka Data) Design**. Seems a bit misplaced, because in every other field of communication, **`Content`** is hailed as King, yet the treatment in terms of tooling is not at par with that sentiment!
+The source of all Presentation is **Data**; yet most of the industry tooling is geared towards _Screen Design_ rather than **Content (aka Data) Design**. This seems a bit misplaced, because in every other field of communication, **`Content`** is hailed as King, yet the treatment in terms of tooling is not at par with that sentiment!
 
 The _Vyuh Framework_ embraces the idea of **Content driven Experience**, where you design the structure of the Content, with a thin layer of hints to allow building the Presentation layer. Hence the design of features with the Vyuh Framework generally starts from building the design of _**Structured Content**_.
 
@@ -26,3 +26,20 @@ After having built a variety of features (aka Mini-Apps) across a wide range of 
 6. When the content-item is a fundamental part of the jargon, **DO** have a separate content-item instead of reusing existing ones. For example, if you are showing Movie details on a card, it is better to create a custom `Movie Card` item instead of reusing the default `Card`. Stay true to the semantics and business jargon used in the domain of the Mini-App. This is a corollary to the principle in 2.
 7. **DO** use the CMS purely for configuration and hide implementation details from it. The typical person of a CMS studio is a Content Author who wants to focus on the Content rather than its presentation. There are times when the presentation differences matter, eg: Mobile vs Desktop. In those cases, create a Conditional Layout for that item with the configuration differences.
 8. **DO NOT** generalize schemas unless you have seen two to three instances of similarity. Refactoring into a common schema too soon has its perils and results in too much of _if-else_ conditions in code later on. It is better to wait for patterns of similarity to emerge before the big refactor.
+
+## Presentation Principles with Flutter
+
+The principles listed below are applicable for all Flutter apps. However, in the context of Vyuh, they make even more sense as it gives greater flexibility with the configuration coming from a CMS.
+
+1. **DO** start with a _Design System_ when building your Mini-Apps. A DS will help you be more consistent with your UI across all the screens.
+2. **DO** divide the content-type that has lots of fields into a set of _related sections_. Then allow rendering the content by sections. This gives configurability on the CMS to reorder sections, add/remove sections and even style them differently using different layouts.
+3. **DO** reuse the _default content types_ like Card, Group, PortableText, Accordion with possibly different layouts to get going faster.&#x20;
+4. **DO** use the _layout configuration_ as an opportunity to provide a different design variant for the content type. A Content Type can have one of many layouts and can be changed for different screens.
+5. **DO** keep your _widget trees shallow_. Break up large widgets into smaller more semantic widgets for easier maintainability.
+6. **DO** keep the _naming of the Widgets_ in sync with the business domain.&#x20;
+
+{% hint style="info" %}
+**Keeps Evolving**
+
+The above principles are what we have applied so far. This will keep evolving as we tackle more varieties of use cases in the future.
+{% endhint %}
