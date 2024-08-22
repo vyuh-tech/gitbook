@@ -20,8 +20,10 @@ pnpm dlx create-sanity@latest
 
 While creating the sanity project, select the project template as `Clean project with no predefined schema types`
 
-{% hint style="warning" %}
-If you have subscribed to a [Paid Plan](https://vyuh.tech/pricing), you will have access to the [vyuh-tech/bricks](https://github.com/vyuh-tech/bricks) repo. You can use the Dart scaffolding tool, **Mason**, to quickly create a _Vyuh project_ with Flutter and Sanity.
+{% hint style="success" %}
+**Scaffold Quickly**
+
+A faster way to scaffold a Vyuh project would be with the [vyuh-tech/bricks](https://github.com/vyuh-tech/bricks) repo. You can use the Dart scaffolding tool, **Mason**, to quickly create a _Vyuh project_ with Flutter and Sanity.
 
 Refer to the [Mason Setup](mason-setup.md) guide for more details.
 {% endhint %}
