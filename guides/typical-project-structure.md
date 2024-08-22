@@ -19,10 +19,9 @@ With this notion in mind, the project structure is specifically crafted to think
 A few things will stand out immediately:
 
 * We truly believe in a **mono-repo** structure where all your _apps_, _features_ and _packages_ stay together.
-* All features are organized inside the **`/features`** folder
-  * Each feature is a combination of the `schema` package and a `flutter` package.
-* There can be multiple apps that can be built by assembling a collection of features. Hence the need for a **`/apps`** folder where you can create a _family of apps_ that rely on related features. We have seen this used for team-specific apps that test only a part of the features and also apps that have shared features.
-* The **`/packages`** folder contains shared libraries that may be used by multiple features or just packages that need to be kept outside of a feature for better modularity. You could keep your _custom plugins_, _design system_ library or other types of _third-party integrations_ inside this folder. It can also hold shared schemas that may be used across features.
+* **Apps**: There can be multiple apps that can be built by assembling a collection of features. Hence the need for a **`/apps`** folder where you can create a _family of apps_ that rely on related features. We have seen this used for team-specific apps that test only a part of the features and also apps that have shared features. Note that the **`/apps`** folder is also where you can keep your _CMS Studio_.
+* **Features**: All features are organized inside the **`/features`** folder. Each feature is a combination of the `schema` package and a `flutter` package.
+* **Packages**: The **`/packages`** folder contains shared libraries that may be used by multiple features or just packages that need to be kept outside of a feature for better modularity. You could keep your _custom plugins_, _design system_ library or other types of _third-party integrations_ inside this folder. It can also hold shared schemas that may be used across features.
 
 ## Keep Evolving
 

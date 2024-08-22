@@ -57,7 +57,7 @@ export default defineConfig([
 ```
 {% endcode %}
 
-Notice the use of the **`vyuh()`** plugin on line no. **`24`**. We pass in the array of features, where each feature is an instance of the `FeatureDescriptor`. A feature-descriptor can export multiple types of content. You can see it in its definition:
+Notice the use of the **`vyuh()`** plugin on line no. **`18`**. We pass in the array of features, where each feature is an instance of the `FeatureDescriptor`. A feature-descriptor can export multiple types of content. You can see it in its definition:
 
 ```typescript
 class FeatureDescriptor {
@@ -83,9 +83,7 @@ For a deeper dive into setting up the CMS, do refer to the guide on [Integrating
 
 A similar setup exists on the Flutter side, where we bootstrap the counterpart-features of the content schemas. Here is the _Dart code_ that will help in rendering the Vyuh App with the previously mentioned features from the CMS setup:
 
-{% code title="lib/main.dart" lineNumbers="true" %}
-```dart
-import 'package:vyuh_core/vyuh_core.dart' as vc;
+<pre class="language-dart" data-title="lib/main.dart" data-line-numbers><code class="lang-dart">import 'package:vyuh_core/vyuh_core.dart' as vc;
 import 'package:vyuh_extension_content/vyuh_extension_content.dart';
 import 'package:vyuh_feature_system/vyuh_feature_system.dart' as system;
 
@@ -94,7 +92,7 @@ import 'package:vyuh_feature_system/vyuh_feature_system.dart' as system;
 void main() async {
   final plugins = await _getPlugins();
 
-  vc.runApp(
+  <a data-footnote-ref href="#user-content-fn-1">vc.runApp(</a>
     initialLocation: '/chakra',
     features: () => [
       system.feature,
@@ -114,11 +112,11 @@ _getPlugins() async {
 
   final contentProvider = SanityContentProvider.withConfig(
     config: SanityConfig(
-      projectId: '<your-project-id>',
+      projectId: '&#x3C;your-project-id>',
       dataset: 'production',
       perspective: Perspective.previewDrafts,
       useCdn: false,
-      token: '<your-token>',
+      token: '&#x3C;your-token>',
     ),
     cacheDuration: const Duration(seconds: 5),
   );
@@ -133,7 +131,7 @@ _getPlugins() async {
       SentryAnalyticsProvider(
           config: SentryProviderConfig(
               sampleRate: 0.2,
-              dsn: '<your-sentry-dsn>',
+              dsn: '&#x3C;your-sentry-dsn>',
           )),
     ]),
     vc.ConsoleLoggerPlugin(),
@@ -146,9 +144,10 @@ _getPlugins() async {
   ];
 }
 
-```
-{% endcode %}
+</code></pre>
 
-The main entry point is on line no. 10, where we call `runApp()` from the **`vyuh_core`** library. As expected, it takes in an array of `features` and `plugins` and bootstraps the Vyuh App to life.
+The main entry point is on line no. **`10`**, where we call `runApp()` from the **`vyuh_core`** library. As expected, it takes in an array of `features` and `plugins` and bootstraps the Vyuh App to life.
 
 Continue exploring the various aspects of Vyuh for a flexible system of building, evolving a Flutter App, configured from a CMS.
+
+[^1]: Vyuh's Main Entry point

@@ -4,10 +4,6 @@ description: Scaffold your Vyuh project quickly with Mason bricks
 
 # Mason Setup
 
-{% hint style="info" %}
-If you are part of an [Enterprise Plan](https://vyuh.tech/pricing), you would have received access to the bricks repository that allows you to quickly setup a Vyuh project. This guide shows you how to setup Mason and scaffold your project.
-{% endhint %}
-
 [Mason](https://github.com/felangel/mason) is a tool that uses a template and generates the files needed for your projects. By using simple parameters such as a `name`, `title` and other details of your project, mason can scaffold the initial project structure quickly.&#x20;
 
 This is possible with **bricks**. A _brick_ is a template that can be expanded by Mason to generate the final file or project structure. Let's setup mason and configure it to use the bricks from Vyuh.

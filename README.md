@@ -27,6 +27,7 @@ This is possible because the framework takes care of all the fundamentals of bui
 * **CMS**-driven (aka _Server-driven_) UI
   * Custom Content types
   * Actions, Layouts, Conditions, Routes
+  * Custom API Content
   * Custom journeys & Conditional flows
 * **Modular** development of **Features** with independent teams
 * Third party integrations via **Plugins**

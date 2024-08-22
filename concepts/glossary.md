@@ -22,7 +22,17 @@ On the Flutter side, builders collect all the related descriptors, build a type-
 
 Describes a single feature that is a unit of functionality in the application. Features are usually user-facing and include elements such as content types, routes, layouts, actions, and conditions. A feature also has metadata about its name, icon, title, and description.
 
-The ability to describe a feature in a modular manner is what makes _Vyuh_ unique.
+The ability to describe a feature in a modular manner is what makes _Vyuh_ unique.&#x20;
+
+One super-power of a Feature is that it is _transferable_ across any Vyuh-enabled Apps. This means you can literally drop a feature into an unrelated Vyuh App and have it work with minimal or no configuration changes. This allows Vyuh to build a **family of Apps** that share a bunch of features!
+
+{% hint style="info" %}
+**Mini App**
+
+Features are also referred as **Mini Apps** in the Vyuh's parlance. When a feature encapsulates a significant functionality, rivaling that of an App, we tend to refer to it as a Mini App.&#x20;
+
+Think of a feature in a _**Banking App**_ that takes care of handling _Investments_ or _Loans_ or doing a peer-to-peer _Payment_, like UPI. These are modular features that are sizable and encapsulate a fair amount of UX journeys and APIs. Such features qualify as _**Mini Apps**_.
+{% endhint %}
 
 ## Plugin
 
@@ -57,6 +67,10 @@ Other aspects of an application such as routes, actions, conditions, etc. are al
 
 Refers to the Content editing experience offered by the headless CMS. This is usually where all the content gets created and managed. It might include a set of workflows for approval before publishing it live. Some studios allow greater customization, allowing developers to provide custom input controls for editing complex content types.
 
+## Content Item
+
+Refers to an instance of a unique content-type such as a Product Card, Image, Text or even a collection  such as a Carousel, List or Grid. There are standard content-items built into the framework such as Card, Group, Divider, Accordion, Portable Text, etc. However, the framework also allows creating custom Content Items that are specialized for the App.
+
 ## Condition
 
 Conditions are runtime elements that evaluate to a boolean or some enumeration. They are used to control the flow of the application as well as the availability of certain elements.
@@ -88,7 +102,7 @@ You can add your own actions and make them relevant to your app.
 
 ## Layout
 
-Layouts describe the visual structure of a content-type. Every content type must have a _default layout_ and can also include multiple other layouts. They are particularly useful for routes, and content types like `Card` or `Group`. Whether a `Group` should be shown as a _vertical list_ or a _2-column grid_ is controlled by the layout. Layouts can be switched for different platforms, screen sizes, or based on runtime conditions.
+Layouts describe the visual structure of a content-type. Every content type (standard or custom) must have a _default layout_ and can also include multiple other layouts. They are particularly useful for routes, and content types like `Card` or `Group`. Whether a `Group` should be shown as a _vertical list_ or a _2-column grid_ is controlled by the layout. Layouts can be switched for different platforms, screen sizes, or based on runtime conditions.
 
 ## Feature Registry
 

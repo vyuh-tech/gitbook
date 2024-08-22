@@ -62,7 +62,7 @@ import {system} from '@vyuh/sanity-schema-system'
 export default defineConfig([
   {
     name: 'default',
-    title: '<Your App Name>',
+    title: 'My Blog',
     basePath: '/',
 
     projectId: '<Your Sanity Project ID>',
