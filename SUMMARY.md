@@ -51,6 +51,7 @@
   * [Vyuh Feature System](framework/packages/vyuh-feature-system.md)
   * [Vyuh Core](framework/packages/vyuh-core.md)
   * [Vyuh Extension Content](framework/packages/vyuh-extension-content.md)
+  * [Vyuh Plugin Content Provider Sanity](framework/packages/vyuh-plugin-content-provider-sanity.md)
 * [Plugins](framework/plugins.md)
 * [Developer Tools](framework/developer-tools.md)
 * [Changelog](framework/changelog.md)
