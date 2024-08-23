@@ -153,22 +153,10 @@ We are now in the final leg of this journey, where we connect the content, featu
 
 We need to add few packages from the framework that allows rendering of the CMS content and also show a _Developer View_ of the features. Run this command in your project directory:
 
-<pre class="language-sh"><code class="lang-sh"><strong>flutter pub add vyuh_feature_system vyuh_feature_developer
+<pre class="language-sh"><code class="lang-sh"><strong>flutter pub add vyuh_feature_system vyuh_feature_developer vyuh_plugin_content_provider_sanity
 </strong></code></pre>
 
-In order to pull content from Sanity, we also need to include the **Sanity Content Provider** in our App's `pubspec.yaml`. Here's the entry you need to make under `dependencies`.
-
-```yaml
-dependencies:
-    # ... other dependencies ...
-    vyuh_content_provider_sanity:
-        hosted: https://<private-hosted-pub>
-        version: ^1.0.0
-```
-
-{% hint style="success" %}
-**`vyuh_content_provider_sanity`** is a privately hosted package and part of the [**Enterprise plan**](https://vyuh.tech/pricing). You will be given a _token_ to get access to the private pub upon onboarding.
-{% endhint %}
+> :point\_up\_2: Notice the reference to the Sanity Content Provider package. This is the key package that allows connecting to Sanity and fetching documents.&#x20;
 
 Now we add `SanityContentProvider` within the `DefaultContentPlugin`. This creates the connection to the Sanity Studio we setup earlier and can fetch content on demand.
 
@@ -176,13 +164,13 @@ Now we add `SanityContentProvider` within the `DefaultContentPlugin`. This creat
 ```dart
 import 'package:flutter/material.dart';
 import 'package:sanity_client/client.dart';
-import 'package:vyuh_content_provider_sanity/vyuh_content_provider_sanity.dart';
 import 'package:vyuh_core/vyuh_core.dart' as vc;
 import 'package:vyuh_extension_content/vyuh_extension_content.dart';
 import 'feature.dart' as blog;
 import 'package:vyuh_feature_system/vyuh_feature_system.dart' as system;
 import 'package:vyuh_feature_developer/vyuh_feature_developer.dart'
     as developer;
+import 'package:vyuh_plugin_content_provider_sanity/vyuh_plugin_content_provider_sanity.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -225,7 +213,9 @@ Now run the app and be ready to be greeted by our lovely blog. Play around in th
 {% hint style="info" %}
 ### Running on the Web?
 
-If you are running on the Web, make sure to update the **CORS Origins** in Sanity to include the port number you are using. In the previous screenshot of the console, you will notice that we have used **`https://localhost:8080`**.\
+If you are running on the Web, make sure to update the **CORS Origins** in Sanity to include the port number you are using. In the previous screenshot of the console, you will notice that we have used **`https://localhost:8080`**.&#x20;
+
+You will also have to pass the **`--web-port=8080`** to ensure the Browser launches on the correct port.\
 
 {% endhint %}
 
