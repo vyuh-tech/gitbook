@@ -23,6 +23,7 @@
 * [Designing Features](guides/designing-features.md)
 * [Using Plugins](guides/using-plugins.md)
 * [CMS](guides/cms/README.md)
+  * [Core Elements](guides/cms/core-elements.md)
   * [Designing Content Schemas](guides/cms/designing-content-schemas.md)
   * [Custom Content Type](guides/cms/adding-a-new-content-type.md)
   * [Custom API Content](guides/cms/custom-api-content.md)
