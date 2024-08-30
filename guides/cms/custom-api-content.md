@@ -12,7 +12,7 @@ In this guide, we will see how to integrate a third-party API and render it as p
 
 After searching the internet for _free API resources_, we decided to go with the one at [DummyJSON](https://dummyjson.com/). This resource gives a variety of APIs for _products, carts, recipes, todos_, etc.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (12).png" alt="" width="375"><figcaption><p>DummyJSON APIs</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (12) (1).png" alt="" width="375"><figcaption><p>DummyJSON APIs</p></figcaption></figure>
 
 The API for **Products** is what we decided to use for this example. It has a rich schema for its responses and good query parameters around which we could model our _API Configuration_.
 

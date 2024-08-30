@@ -18,7 +18,7 @@ In a traditional Flutter development approach, applications are often built in a
 4. **Static Content**: Content is usually static and embedded directly into the app, leading to frequent code updates and redeployments. This delays the time to market of a feature to the customer.
 5. **Team Co-ordination**: Requires high amount of co-ordination between teams to ensure no one is impacting the overall codebase or stepping on each other.
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>Fixed journeys and screen content</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (12).png" alt=""><figcaption><p>Fixed journeys and screen content</p></figcaption></figure>
 
 ## Vyuh's Approach
 
@@ -32,7 +32,7 @@ Vyuh shifts the paradigm from a monolithic development approach to a more modula
 4. **Separation of Concerns**: This approach enforces a clear separation between the app's structure and its content, leading to cleaner, more maintainable codebases. The presentation is controlled from Flutter, driven by the content coming from a cloud-hosted headless CMS.
 5. **Team Independence**: Since features can be developed and even tested independently, it reduces the co-ordination between teams and allows them to operate at full speed.
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>Content driven workflow in a Vyuh based Application</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (2).png" alt=""><figcaption><p>Content driven workflow in a Vyuh based Application</p></figcaption></figure>
 
 ## **Comparing the Approaches**
 

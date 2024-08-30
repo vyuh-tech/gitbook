@@ -96,7 +96,7 @@ export const misc = new FeatureDescriptor({
 
 At the top level where the Sanity Studio is defined, we have already included the **misc** feature in our list of features. Thus the _part-of-day_ condition will now be visible when you try associating this condition for, say, a _conditional-block_.
 
-<figure><img src="../../.gitbook/assets/image (12) (1).png" alt="" width="375"><figcaption><p>Setting the condtion to "Part of Day"</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (12) (1) (1).png" alt="" width="375"><figcaption><p>Setting the condtion to "Part of Day"</p></figcaption></figure>
 
 ## 3. Create the Flutter counterpart
 
