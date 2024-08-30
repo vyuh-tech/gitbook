@@ -10,7 +10,7 @@ CMS stands for **C**ontent **M**anagement **S**ystem
 
 The CMS (Content for short) is a flagship extension provided by the Vyuh Framework. It allows you to integrate with any headless-CMS and have it control the App Experience. By default we provide support for [Sanity.io](https://sanity.io), a popular headless-CMS that works well for the kind of scenarios that we expect in App Development.
 
-The Vyuh Framework supports extensions that allow you to extend the capabilities of the framework in new direction. The Content extension is supported by two types of classes: `ContentExtensionDescriptor` and `ContentExtensionBuilder`. They work in conjunction to extract the support content-extensions by various features and use that to render content in the final App.
+The Vyuh Framework supports extensions that allow you to extend the capabilities of the framework in new directions. The Content extension is supported by two types of classes: `ContentExtensionDescriptor` and `ContentExtensionBuilder`. These two work in conjunction to extract the content-extensions by various features and use that to render content in the final App.
 
 {% hint style="info" %}
 The concept of [Descriptors and Builders](../../concepts/descriptors-and-builders.md) plays a significant role here. The `ContentExtensionDescriptor` is used by individual features to export the various content types, actions, conditions and other kinds of configurations. The `ContentExtensionBuilder` compiles all these descriptors, across the features and assembles a registry that is used to render content at runtime.

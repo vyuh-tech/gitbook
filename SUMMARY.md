@@ -32,6 +32,7 @@
   * [Conditions](guides/cms/conditions.md)
   * [Custom Condition](guides/cms/custom-condition.md)
   * [Conditional Route](guides/cms/conditional-route.md)
+  * [Template Routes](guides/cms/template-routes.md)
 
 ## 🍀 Examples
 
