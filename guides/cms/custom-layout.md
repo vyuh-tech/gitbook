@@ -16,7 +16,7 @@ In this guide, let's add a custom layout for the `ProductCard` item we created i
 
 The default layout for the `ProductCard` item, that we created earlier, looks like below.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt="" width="375"><figcaption><p>Default layout for ProductCard</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt="" width="375"><figcaption><p>Default layout for ProductCard</p></figcaption></figure>
 
 We will change things up a bit and make the image come on the left and show just the `title`, `price` and `category`. This will be our mini-view of the _ProductCard_. Let's get started.
 

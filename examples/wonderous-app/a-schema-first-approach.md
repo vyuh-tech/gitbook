@@ -18,7 +18,7 @@ This, by no means is a new concept. In fact, it is how Software Development was 
 
 After digging through the content aspects of a wonder, we came up with a schema that described most of the Wonder details. Note that there are a few exclusions (such as the `artifacts`, as mentioned in the previous post).
 
-<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>The Wonder schema</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption><p>The Wonder schema</p></figcaption></figure>
 
 {% hint style="success" %}
 When we tackle **Localization**, in a _future version_, this exact schema will serve to create a localized Wonder.

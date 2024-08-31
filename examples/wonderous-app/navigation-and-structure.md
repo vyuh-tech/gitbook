@@ -195,6 +195,6 @@ final feature = FeatureDescriptor(
 
 With all the setup done so far on the CMS and on the Flutter side, we can run our App on the Simulator for a live preview. This is live because, making changes on the CMS gives a quick preview on the Flutter App. This workflow is very effective as you explore various layouts, content-combinations and tweak the visual details with _Flutter Hot Reload_.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption><p>Navigating a single wonder in Vyuh</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Navigating a single wonder in Vyuh</p></figcaption></figure>
 
 Note that we have taken some creative license in building these sections and they do not look exactly like the ones in the original Wonderous App. That is a deliberate choice, in order to focus more on the Vyuh related capabilities rather than Flutter. It is possible to get the exact same visual behavior with more time and effort.

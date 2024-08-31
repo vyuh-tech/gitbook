@@ -8,7 +8,7 @@ Actions are a great to way to build interactivity within your applications. We h
 
 ## Built-in Actions
 
-<figure><img src="../../.gitbook/assets/image.png" alt="" width="375"><figcaption><p>All the System actions available in Vyuh</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2).png" alt="" width="375"><figcaption><p>All the System actions available in Vyuh</p></figcaption></figure>
 
 It is worth mentioning that before you start creating your own action, it is a good idea to check the ones already available out of the box in Vyuh. These include:
 
@@ -175,7 +175,7 @@ export default defineConfig([
 
 Now, its time to configure it inside the Studio. We will create a built-in Card which will invoke the action when tapped. Here is how it would look in the Studio with the configuration form.
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Setting up the "Show Barcode" Action</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Setting up the "Show Barcode" Action</p></figcaption></figure>
 
 ## Flutter counterpart for the Action
 
