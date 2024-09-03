@@ -20,3 +20,5 @@ The Vyuh Core package exposes the core types that are required for running the V
   * Navigation
 * **CMSRoute**: custom GoRoute subclass that allows deeper customization by mapping to a CMS path or supplying custom transitions.
 
+{% embed url="https://pub.dev/packages/vyuh_core" %}
+

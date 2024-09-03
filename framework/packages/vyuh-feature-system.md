@@ -8,6 +8,8 @@ description: >-
 
 This is a system level feature that is needed for all Vyuh Apps. It includes the fundamental blocks for rendering **Content Items** and **Routes**, handling **Actions**, branching based on **Conditions** and switching between different **Layouts** for content items.
 
+{% embed url="https://pub.dev/packages/vyuh_feature_system" %}
+
 The following sections go into details of the various elements exposed in this feature.
 
 ## Content Items

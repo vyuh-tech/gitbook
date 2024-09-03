@@ -50,8 +50,8 @@
 ## 🔆 Framework
 
 * [Packages](framework/packages/README.md)
-  * [Vyuh Feature System](framework/packages/vyuh-feature-system.md)
   * [Vyuh Core](framework/packages/vyuh-core.md)
+  * [Vyuh Feature System](framework/packages/vyuh-feature-system.md)
   * [Vyuh Extension Content](framework/packages/vyuh-extension-content.md)
   * [Vyuh Plugin Content Provider Sanity](framework/packages/vyuh-plugin-content-provider-sanity.md)
 * [Plugins](framework/plugins.md)

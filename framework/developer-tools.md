@@ -52,3 +52,5 @@ You can also drill down into the plugins and see its contained elements. This is
 {% hint style="info" %}
 In future versions, we will make this more extensible and allow every feature and plugin to provide its own information views, in addition to the standard details.
 {% endhint %}
+
+{% embed url="https://pub.dev/packages/vyuh_feature_developer" %}
