@@ -4,6 +4,8 @@ description: Integrate with a headless CMS with this extension and support its c
 
 # Vyuh Extension Content
 
+{% embed url="https://pub.dev/packages/vyuh_extension_content" %}
+
 This package provides the core types for integrating with a headless CMS, which includes the Content plugin, the CMS building blocks, and also the UI for rendering a route from a CMS.
 
 ## Content Plugin
@@ -19,5 +21,3 @@ Additionally, this package also includes the `ContentExtensionDescriptor` and th
 ## Core Types
 
 Expands the set of core types for Content driven apps by adding `Action` and `Condition` types.
-
-{% embed url="https://pub.dev/packages/vyuh_extension_content" %}

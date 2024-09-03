@@ -6,6 +6,8 @@ description: >-
 
 # Vyuh Core
 
+{% embed url="https://pub.dev/packages/vyuh_core" %}
+
 The Vyuh Core package exposes the core types that are required for running the Vyuh application. This includes the following:
 
 * **runApp()**: the entry point to running a Vyuh Application. This takes in the list of features and a list of plugins as arguments. You can also customize specific widgets in the framework such as the loaders, error-views and the root app-builder.
@@ -19,6 +21,4 @@ The Vyuh Core package exposes the core types that are required for running the V
   * Authentication
   * Navigation
 * **CMSRoute**: custom GoRoute subclass that allows deeper customization by mapping to a CMS path or supplying custom transitions.
-
-{% embed url="https://pub.dev/packages/vyuh_core" %}
 

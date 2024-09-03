@@ -4,6 +4,8 @@ description: The Developer Tools feature to get an X-Ray vision of your App
 
 # Developer Tools
 
+{% embed url="https://pub.dev/packages/vyuh_feature_developer" %}
+
 Once you start building larger apps, it is useful to see how the App was put together and explore its details. This is the purpose of the _Developer Tools_ feature, which gives you this breakdown, organized by features and plugins.
 
 <div>
@@ -52,5 +54,3 @@ You can also drill down into the plugins and see its contained elements. This is
 {% hint style="info" %}
 In future versions, we will make this more extensible and allow every feature and plugin to provide its own information views, in addition to the standard details.
 {% endhint %}
-
-{% embed url="https://pub.dev/packages/vyuh_feature_developer" %}

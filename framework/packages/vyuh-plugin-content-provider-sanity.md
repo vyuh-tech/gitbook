@@ -6,8 +6,8 @@ description: >-
 
 # Vyuh Plugin Content Provider Sanity
 
+{% embed url="https://pub.dev/packages/vyuh_plugin_content_provider_sanity" %}
+
 [Sanity.io](https://sanity.io) is the default CMS that is used by the Vyuh framework. This provider allows you to fetch documents from a Sanity dataset using GROQ queries and render them using the Vyuh framework.
 
 Internally, the provider uses the [Sanity Client](https://pub.dev/packages/sanity\_client) for its configuration and makes connections to the Sanity CDN.
-
-{% embed url="https://pub.dev/packages/vyuh_plugin_content_provider_sanity" %}
