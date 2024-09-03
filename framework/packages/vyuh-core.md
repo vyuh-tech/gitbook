@@ -6,3 +6,17 @@ description: >-
 
 # Vyuh Core
 
+The Vyuh Core package exposes the core types that are required for running the Vyuh application. This includes the following:
+
+* **runApp()**: the entry point to running a Vyuh Application. This takes in the list of features and a list of plugins as arguments. You can also customize specific widgets in the framework such as the loaders, error-views and the root app-builder.
+* **Descriptors & Builders**: the main descriptors for defining a feature (`FeatureDescriptor`) and extension (`ExtensionDescriptor`). Also includes the `ExtensionBuilder` type for creating extensions to the framework.
+* **Interface types** for the core plugins:&#x20;
+  * Content
+  * Analytics
+  * Network
+  * Logger
+  * DI (Dependency Injection)
+  * Authentication
+  * Navigation
+* **CMSRoute**: custom GoRoute subclass that allows deeper customization by mapping to a CMS path or supplying custom transitions.
+
