@@ -37,7 +37,11 @@
 ## 🍀 Examples
 
 * [Overview](examples/overview.md)
-* [Unsplash App](examples/unsplash-app.md)
+* [Unsplash App](examples/unsplash-app/README.md)
+  * [The FeatureDescriptor](examples/unsplash-app/the-featuredescriptor.md)
+  * [Navigation and Routes](examples/unsplash-app/navigation-and-routes.md)
+  * [Separation of Concerns](examples/unsplash-app/separation-of-concerns.md)
+  * [The Widgets](examples/unsplash-app/the-widgets.md)
 * [Wonderous App](examples/wonderous-app/README.md)
   * [Distilling Wonderous](examples/wonderous-app/distilling-wonderous.md)
   * [A Schema-first approach](examples/wonderous-app/a-schema-first-approach.md)

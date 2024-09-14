@@ -6,7 +6,7 @@ description: Building the Wonderous' User Journeys in Vyuh
 
 In an earlier post, we talked about the essential journey of the Wonderous App, which starts with a list of the Wonders and navigates into the various details of the Wonder. This is the same setup we will replicate in the CMS, as shown below:
 
-<figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption><p>Wonderous Journey Map</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption><p>Wonderous Journey Map</p></figcaption></figure>
 
 These routes map to the `Route` document in the CMS. _**Route**_ is a special type in Vyuh that allows you to define a single page or dialog. Think of this as a single screen (aka page) of content. You can create routes within the CMS and link them together for navigation.
 
@@ -14,7 +14,7 @@ These routes map to the `Route` document in the CMS. _**Route**_ is a special ty
 
 The routes needed for our version of _Wonderous_ are as shown below:
 
-<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption><p>Wonderous Routes</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption><p>Wonderous Routes</p></figcaption></figure>
 
 Now, you might be wondering: **"How come we didn't create a separate route for each Wonder?"**. A very valid question! You see, all wonders have exactly the same visual structure and the only thing that distinguishes one wonder from another is its **`identifier`** and other _wonder-specific_ content. So, these routes act more like _template-routes_ rather than fixed static routes.
 
@@ -195,6 +195,6 @@ final feature = FeatureDescriptor(
 
 With all the setup done so far on the CMS and on the Flutter side, we can run our App on the Simulator for a live preview. This is live because, making changes on the CMS gives a quick preview on the Flutter App. This workflow is very effective as you explore various layouts, content-combinations and tweak the visual details with _Flutter Hot Reload_.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Navigating a single wonder in Vyuh</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Navigating a single wonder in Vyuh</p></figcaption></figure>
 
 Note that we have taken some creative license in building these sections and they do not look exactly like the ones in the original Wonderous App. That is a deliberate choice, in order to focus more on the Vyuh related capabilities rather than Flutter. It is possible to get the exact same visual behavior with more time and effort.

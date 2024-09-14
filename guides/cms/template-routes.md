@@ -8,7 +8,7 @@ description: >-
 
 Routes in the Vyuh framework allow you to define the structure of a page or a dialog. The structure of a route is put together by assembling a set of content items from the framework. These routes also have an equivalent on the Flutter side, where they are rendered using an application router like the **`GoRouter`**. Thus an application route like `/home` can have CMS route with the same path that defines the structure of the page.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Application Route to CMS Route mapping</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption><p>Application Route to CMS Route mapping</p></figcaption></figure>
 
 ***
 
@@ -101,7 +101,7 @@ The navigation inside the Wonderous app is quite simple. You start on the homepa
 
 This can be seen in the navigation structure, shown below:
 
-<figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption><p>Navigation structure in the Wonderous App</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption><p>Navigation structure in the Wonderous App</p></figcaption></figure>
 
 ### CMS Routes
 
@@ -113,13 +113,13 @@ As an aside, if we were duplicating this across wonders, you would have to inclu
 The template-route approach really shines here.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption><p>CMS template routes for the Wonder</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption><p>CMS template routes for the Wonder</p></figcaption></figure>
 
 ### Application Routes
 
 Each of the wonders have a specific **`identifier`** that helps us in identifying the wonder on the CMS. When constructing the application route, we will include this identifier in the route path itself and use that to map the exact wonder page on the CMS.
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Mapping of Wonder Detail routes</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Mapping of Wonder Detail routes</p></figcaption></figure>
 
 The magic of mapping the application route to the CMS route happens in our custom `GoRoute` called **`CMSRoute`**. We supply the **`cmsPathResolver`** parameter which takes care of mapping the route. This can be seen in the snippet below.
 
