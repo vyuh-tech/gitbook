@@ -43,26 +43,24 @@ _getPlugins() async {
 
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
 
-  final contentProvider = SanityContentProvider.withConfig(
-    config: SanityConfig(
-      projectId: '<project-id>',
-      dataset: 'production',
-      perspective: Perspective.previewDrafts,
-      useCdn: false,
-      token: '<token>',
-    ),
-    cacheDuration: const Duration(seconds: 5),
-  );
-
   // Ensure all imperatively navigated URLs are shown in the URL bar
   DefaultNavigationPlugin.enableURLReflectsImperativeAPIs();
   DefaultNavigationPlugin.usePathStrategy();
 
-  return [
-    DefaultContentPlugin(
-      provider: contentProvider,
+  return PluginDescriptor(
+    content: DefaultContentPlugin(
+      provider: SanityContentProvider.withConfig(
+        config: SanityConfig(
+          projectId: '<project-id>',
+          dataset: 'production',
+          perspective: Perspective.previewDrafts,
+          useCdn: false,
+          token: '<token>',
+        ),
+        cacheDuration: const Duration(seconds: 5),
+      ),
     ),
-    vc.AnalyticsPlugin(
+    analytics: vc.AnalyticsPlugin(
       providers: [
         FirebaseAnalyticsProvider(),
         SentryAnalyticsProvider(
@@ -73,15 +71,17 @@ _getPlugins() async {
         ),
       ],
     ),
-    vc.ConsoleLoggerPlugin(),
-    FirebaseAuthPlugin(),
-    FirebaseFeatureFlagPlugin(
-      settings: RemoteConfigSettings(
-        fetchTimeout: const Duration(seconds: 10),
-        minimumFetchInterval: const Duration(seconds: 10),
+    auth: FirebaseAuthPlugin(),
+    others: [
+      vc.ConsoleLoggerPlugin(),
+      FirebaseFeatureFlagPlugin(
+        settings: RemoteConfigSettings(
+          fetchTimeout: const Duration(seconds: 10),
+          minimumFetchInterval: const Duration(seconds: 10),
+        ),
       ),
-    ),
-  ];
+    ],
+  );
 }
 
 ```
